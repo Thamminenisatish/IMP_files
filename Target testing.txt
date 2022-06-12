@@ -1,0 +1,19 @@
+How to test scripts in target
+
+172.30.0.47 and 172.30.0.162 are hardware boxes which are connected via 10G cable.
+
+for testing in target envinrornment we need two boards (.47 com2 and .162com2).
+
+after login into .47 pc root@host# conman -j com2
+it enters into root@host:/home/application#
+
+we need our image into above path i.e /home/application/ISS.exe
+
+for copying the image(now we are in .47 pc and need to copy image to this pc and mentioned path) and consider our image in .194pc /home/Satish/iss_core/code/future/LR/ISS.exe   then
+root@host:/home/application#scp root@172.30.0.194:/home/Satish/iss_core/code/future/LR/ISS.exe test1.exe----     we are copying image and renamed to test1.exe in our /home/application path
+now in our .47pc
+
+#gdb ./test1.exe
+
+it will goto ISS login page
+iss#r s erps1 --   erps1 file is script and that file also need to copy in the /home/application path in .47pc

@@ -1,0 +1,2060 @@
+configure terminal
+ip access-list extended 1001
+deny ip 1.1.1.1 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1002
+deny ip 1.1.1.2 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1003
+deny ip 1.1.1.3 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1004
+deny ip 1.1.1.4 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1005
+deny ip 1.1.1.5 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1006
+deny ip 1.1.1.6 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1007
+deny ip 1.1.1.7 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1008
+deny ip 1.1.1.8 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1009
+deny ip 1.1.1.9 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1010
+deny ip 1.1.1.10 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1011
+deny ip 1.1.1.11 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1012
+deny ip 1.1.1.12 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1013
+deny ip 1.1.1.13 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1014
+deny ip 1.1.1.14 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1015
+deny ip 1.1.1.15 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1016
+deny ip 1.1.1.16 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1017
+deny ip 1.1.1.17 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1018
+deny ip 1.1.1.18 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1019
+denGy ip 1.1.1.19 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1020
+deny ip 1.1.1.20 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1021
+deny ip 1.1.1.21 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1022
+deny ip 1.1.1.22 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1023
+deny ip 1.1.1.23 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1024
+deny ip 1.1.1.24 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1025
+deny ip 1.1.1.25 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1026
+deny ip 1.1.1.26 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1027
+deny ip 1.1.1.27 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1028
+deny ip 1.1.1.28 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1029
+deny ip 1.1.1.29 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1030
+deny ip 1.1.1.30 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1031
+deny ip 1.1.1.31 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1032
+deny ip 1.1.1.32 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1033
+deny ip 1.1.1.33 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1034
+deny ip 1.1.1.34 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1035
+deny ip 1.1.1.35 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1036
+deny ip 1.1.1.36 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1037
+deny ip 1.1.1.37 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1038
+deny ip 1.1.1.38 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1039
+deny ip 1.1.1.39 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1040
+deny ip 1.1.1.40 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1041
+deny ip 1.1.1.41 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1042
+deny ip 1.1.1.42 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1043
+deny ip 1.1.1.43 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1044
+deny ip 1.1.1.44 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1045
+deny ip 1.1.1.45 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1046
+deny ip 1.1.1.46 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1047
+deny ip 1.1.1.47 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1048
+deny ip 1.1.1.48 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1049
+deny ip 1.1.1.49 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1050
+deny ip 1.1.1.50 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1051
+deny ip 1.1.1.51 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1052
+deny ip 1.1.1.52 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1053
+deny ip 1.1.1.53 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1054
+deny ip 1.1.1.54 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1055
+deny ip 1.1.1.55 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1056
+deny ip 1.1.1.56 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1057
+deny ip 1.1.1.57 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1058
+deny ip 1.1.1.58 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1059
+deny ip 1.1.1.59 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1060
+deny ip 1.1.1.60 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1061
+deny ip 1.1.1.61 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1062
+deny ip 1.1.1.62 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1063
+deny ip 1.1.1.63 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1064
+deny ip 1.1.1.64 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1065
+deny ip 1.1.1.65 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1066
+deny ip 1.1.1.66 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1067
+deny ip 1.1.1.67 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1068
+deny ip 1.1.1.68 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1069
+deny ip 1.1.1.69 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1070
+deny ip 1.1.1.70 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1071
+deny ip 1.1.1.71 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1072
+deny ip 1.1.1.72 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1073
+deny ip 1.1.1.73 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1074
+deny ip 1.1.1.74 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1075
+deny ip 1.1.1.75 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1076
+deny ip 1.1.1.76 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1077
+deny ip 1.1.1.77 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1078
+deny ip 1.1.1.78 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1079
+deny ip 1.1.1.79 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1080
+deny ip 1.1.1.80 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1081
+deny ip 1.1.1.81 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1082
+deny ip 1.1.1.82 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1083
+deny ip 1.1.1.83 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1084
+deny ip 1.1.1.84 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1085
+deny ip 1.1.1.85 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1086
+deny ip 1.1.1.86 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1087
+deny ip 1.1.1.87 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1088
+deny ip 1.1.1.88 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1089
+deny ip 1.1.1.89 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1090
+deny ip 1.1.1.90 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1091
+deny ip 1.1.1.91 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1092
+deny ip 1.1.1.92 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1093
+deny ip 1.1.1.93 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1094
+deny ip 1.1.1.94 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1095
+deny ip 1.1.1.95 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1096
+deny ip 1.1.1.96 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1097
+deny ip 1.1.1.97 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1098
+deny ip 1.1.1.98 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1099
+deny ip 1.1.1.99 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1100
+deny ip 1.1.1.100 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1101
+deny ip 1.1.1.101 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1102
+deny ip 1.1.1.102 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1103
+deny ip 1.1.1.103 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1104
+deny ip 1.1.1.104 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1105
+deny ip 1.1.1.105 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1106
+deny ip 1.1.1.106 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1107
+deny ip 1.1.1.107 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1108
+deny ip 1.1.1.108 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1109
+deny ip 1.1.1.109 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1110
+deny ip 1.1.1.110 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1111
+deny ip 1.1.1.111 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1112
+deny ip 1.1.1.112 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1113
+deny ip 1.1.1.113 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1114
+deny ip 1.1.1.114 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1115
+deny ip 1.1.1.115 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1116
+deny ip 1.1.1.116 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1117
+deny ip 1.1.1.117 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1118
+deny ip 1.1.1.118 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1119
+deny ip 1.1.1.119 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1120
+deny ip 1.1.1.120 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1121
+deny ip 1.1.1.121 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1122
+deny ip 1.1.1.122 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1123
+deny ip 1.1.1.123 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1124
+deny ip 1.1.1.124 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1125
+deny ip 1.1.1.125 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1126
+deny ip 1.1.1.126 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1127
+deny ip 1.1.1.127 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1128
+deny ip 1.1.1.128 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1129
+deny ip 1.1.1.129 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1130
+deny ip 1.1.1.130 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1131
+deny ip 1.1.1.131 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1132
+deny ip 1.1.1.132 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1133
+deny ip 1.1.1.133 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1134
+deny ip 1.1.1.134 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1135
+deny ip 1.1.1.135 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1136
+deny ip 1.1.1.136 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1137
+deny ip 1.1.1.137 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1138
+deny ip 1.1.1.138 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1139
+deny ip 1.1.1.139 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1140
+deny ip 1.1.1.140 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1141
+deny ip 1.1.1.141 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1142
+deny ip 1.1.1.142 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1143
+deny ip 1.1.1.143 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1144
+deny ip 1.1.1.144 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1145
+deny ip 1.1.1.145 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1146
+deny ip 1.1.1.146 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1147
+deny ip 1.1.1.147 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1148
+deny ip 1.1.1.148 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1149
+deny ip 1.1.1.149 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1150
+deny ip 1.1.1.150 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1151
+deny ip 1.1.1.151 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1152
+deny ip 1.1.1.152 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1153
+deny ip 1.1.1.153 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1154
+deny ip 1.1.1.154 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1155
+deny ip 1.1.1.155 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1156
+deny ip 1.1.1.156 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1157
+deny ip 1.1.1.157 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1158
+deny ip 1.1.1.158 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1159
+deny ip 1.1.1.159 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1160
+deny ip 1.1.1.160 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1161
+deny ip 1.1.1.161 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1162
+deny ip 1.1.1.162 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1163
+deny ip 1.1.1.163 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1164
+deny ip 1.1.1.164 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1165
+deny ip 1.1.1.165 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1166
+deny ip 1.1.1.166 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1167
+deny ip 1.1.1.167 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1168
+deny ip 1.1.1.168 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1169
+deny ip 1.1.1.169 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1170
+deny ip 1.1.1.170 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1171
+deny ip 1.1.1.171 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1172
+deny ip 1.1.1.172 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1173
+deny ip 1.1.1.173 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1174
+deny ip 1.1.1.174 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1175
+deny ip 1.1.1.175 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1176
+deny ip 1.1.1.176 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1177
+deny ip 1.1.1.177 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1178
+deny ip 1.1.1.178 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1179
+deny ip 1.1.1.179 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1180
+deny ip 1.1.1.180 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1181
+deny ip 1.1.1.181 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1182
+deny ip 1.1.1.182 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1183
+deny ip 1.1.1.183 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1184
+deny ip 1.1.1.184 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1185
+deny ip 1.1.1.185 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1186
+deny ip 1.1.1.186 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1187
+deny ip 1.1.1.187 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1188
+deny ip 1.1.1.188 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1189
+deny ip 1.1.1.189 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1190
+deny ip 1.1.1.190 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1191
+deny ip 1.1.1.191 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1192
+deny ip 1.1.1.192 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1193
+deny ip 1.1.1.193 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1194
+deny ip 1.1.1.194 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1195
+deny ip 1.1.1.195 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1196
+deny ip 1.1.1.196 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1197
+deny ip 1.1.1.197 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1198
+deny ip 1.1.1.198 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1199
+deny ip 1.1.1.199 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1200
+deny ip 1.1.1.200 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1201
+deny ip 1.1.1.201 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1202
+deny ip 1.1.1.202 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1203
+deny ip 1.1.1.203 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1204
+deny ip 1.1.1.204 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1205
+deny ip 1.1.1.205 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1206
+deny ip 1.1.1.206 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1207
+deny ip 1.1.1.207 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1208
+deny ip 1.1.1.208 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1209
+deny ip 1.1.1.209 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1210
+deny ip 1.1.1.210 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1211
+deny ip 1.1.1.211 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1212
+deny ip 1.1.1.212 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1213
+deny ip 1.1.1.213 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1214
+deny ip 1.1.1.214 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1215
+deny ip 1.1.1.215 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1216
+deny ip 1.1.1.216 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1217
+deny ip 1.1.1.217 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1218
+deny ip 1.1.1.218 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1219
+deny ip 1.1.1.219 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1220
+deny ip 1.1.1.220 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1221
+deny ip 1.1.1.221 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1222
+deny ip 1.1.1.222 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1223
+deny ip 1.1.1.223 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1224
+deny ip 1.1.1.224 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1225
+deny ip 1.1.1.225 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1226
+deny ip 1.1.1.226 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1227
+deny ip 1.1.1.227 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1228
+deny ip 1.1.1.228 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1229
+deny ip 1.1.1.229 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1230
+deny ip 1.1.1.230 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1231
+deny ip 1.1.1.231 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1232
+deny ip 1.1.1.232 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1233
+deny ip 1.1.1.233 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1234
+deny ip 1.1.1.234 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1235
+deny ip 1.1.1.235 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1236
+deny ip 1.1.1.236 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1237
+deny ip 1.1.1.237 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1238
+deny ip 1.1.1.238 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1239
+deny ip 1.1.1.239 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1240
+deny ip 1.1.1.240 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1241
+deny ip 1.1.1.241 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1242
+deny ip 1.1.1.242 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1243
+deny ip 1.1.1.243 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1244
+deny ip 1.1.1.244 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1245
+deny ip 1.1.1.245 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1246
+deny ip 1.1.1.246 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1247
+deny ip 1.1.1.247 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1248
+deny ip 1.1.1.248 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1249
+deny ip 1.1.1.249 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1250
+deny ip 1.1.1.250 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1251
+deny ip 1.1.1.251 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1252
+deny ip 1.1.1.252 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1253
+deny ip 1.1.1.253 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1254
+deny ip 1.1.1.254 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1255
+deny ip 1.1.1.255 255.0 any priority 50
+end
+configure terminal
+ip access-list extended 1256
+deny ip 2.2.2.1 255.0 any priority 50
+end
+
+
+
+
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1001  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1002  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1003  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1004  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1005  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1006  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1007  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1008  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1009  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1010  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1011  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1012  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1013  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1014  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1015  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1016  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1017  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1018  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1019  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1018  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1019  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1020  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1021  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1022  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1023  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1024  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1025  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1026  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1027  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1028  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1029  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1030  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1031  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1032  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1033  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1034  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1035  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1036  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1037  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1038  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1039  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1040  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1041  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1042  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1043  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1044  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1045  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1046  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1047  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1048  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1049  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1050  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1051  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1052  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1053  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1054  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1055  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1056  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1057  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1058  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1059  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1060  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1061  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1062  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1063  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1064  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1065  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1066  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1067  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1068  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1069  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1070  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1071  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1072  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1073  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1074  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1075  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1076  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1077  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1078  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1079  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1080  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1081  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1082  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1083  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1084  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1085  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1086  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1087  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1088  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1089  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1090  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1091  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1092  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1093  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1094  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1095  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1096  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1097  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1098  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1099  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1100  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1101  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1102  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1103  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1104  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1105  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1106  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1107  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1108  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1109  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1110  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1111  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1112  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1113  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1114  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1115  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1116  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1117  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1118  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1119  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1120  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1121  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1122  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1123  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1124  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1125  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1126  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1127  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1128  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1129  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1130  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1131  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1132  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1133  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1134  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1135  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1136  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1137  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1138  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1139  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1140  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1141  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1142  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1143  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1144  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1145  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1146  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1147  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1148  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1149  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1150  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1151  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1152  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1153  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1154  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1155  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1156  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1157  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1158  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1159  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1160  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1161  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1162  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1163  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1164  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1165  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1166  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1167  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1168  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1169  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1170  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1171  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1172  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1173  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1174  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1175  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1176  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1177  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1178  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1179  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1180  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1181  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1182  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1183  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1184  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1185  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1186  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1187  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1188  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1189  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1190  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1191  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1192  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1193  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1194  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1195  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1196  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1197  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1198  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1199  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1200  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1201  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1202  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1203  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1204  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1205  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1206  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1207  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1208  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1209  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1210  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1211  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1212  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1213  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1214  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1215  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1216  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1217  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1218  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1219  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1220  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1221  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1222  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1223  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1224  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1225  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1226  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1227  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1228  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1229  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1230  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1231  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1232  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1233  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1234  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1235  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1236  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1237  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1238  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1239  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1240  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1241  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1242  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1243  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1244  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1245  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1246  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1247  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1248  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1249  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1250  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1251  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1252  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1253  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1254  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1255  in
+end
+configure terminal
+interface gigabitethernet 0/4
+ip access-group 1256  in
+end

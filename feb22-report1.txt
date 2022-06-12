@@ -1,0 +1,22 @@
+                 LACP Port   Admin  Oper   Port    Port
+Port     State   Priority    Key    Key    Number  State
+---------------------------------------------------------------------
+Gi0/1    Down    128         100    100    0x1     0xa2
+Gi0/2    Down    128         100    100    0x2     0xa2
+Gi0/3    Down    128         100    100    0x3     0xa2
+Gi0/4    Down    128         100    100    0x4     0xa2
+Gi0/5    Down    128         100    100    0x5     0xa2
+Gi0/6    Down    128         100    100    0x6     0xa2
+Gi0/7    Down    128         100    100    0x7     0xa2
+Gi0/8    Down    128         100    100    0x8     0xa2
+
+
+ISS# sh int po 100
+
+po100 up, line protocol is down (not connect)
+Bridge Port Type: Customer Bridge Port
+
+Interface SubType: Not Applicable
+Interface Alias: po100
+
+Hardware Address is 00:02:02:03:04:81

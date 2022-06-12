@@ -1,0 +1,25 @@
+/home/paiss/autobuild_BR/code/future/bfd/obj/FutureBFD.o: In function `BfdMainTaskInit':
+/home/paiss/autobuild_BR/code/future/bfd/src/bfdmain.c:118: undefined reference to `BfdHwCreateBfdFilter'
+/home/paiss/autobuild_BR/code/future/bfd/src/bfdmain.c:123: undefined reference to `FsMiBfdHwGetCapability'
+/home/paiss/autobuild_BR/code/future/bfd/src/bfdmain.c:140: undefined reference to `BfdFsNpGetOffloadDetail'
+/home/paiss/autobuild_BR/code/future/bfd/obj/FutureBFD.o: In function `BfdGblHandleModuleStatus':
+/home/paiss/autobuild_BR/code/future/bfd/src/bfdgbl.c:311: undefined reference to `BfdHwCreateBfdFilter'
+/home/paiss/autobuild_BR/code/future/bfd/src/bfdgbl.c:340: undefined reference to `BfdHwDestroyBfdFilter'
+/home/paiss/autobuild_BR/code/future/bfd/obj/FutureBFD.o: In function `BfdUtilUpdateFsMIStdBfdGlobalConfigTable':
+/home/paiss/autobuild_BR/code/future/bfd/src/bfdutl.c:195: undefined reference to `BfdHwDestroyBfdFilter'
+/home/paiss/autobuild_BR/code/future/bfd/src/bfdutl.c:211: undefined reference to `BfdHwCreateBfdFilter'
+/home/paiss/autobuild_BR/code/future/bfd/obj/FutureBFD.o: In function `BfdPortHandleExtInteraction':
+/home/paiss/autobuild_BR/code/future/bfd/src/bfdport.c:63: undefined reference to `LsppApiHandleExtRequest'
+/home/paiss/autobuild_BR/code/future/bfd/src/bfdport.c:90: undefined reference to `LsppApiHandleExtRequest'
+/home/paiss/autobuild_BR/code/future/bfd/obj/FutureBFD.o: In function `BfdOffSessConfigure':
+/home/paiss/autobuild_BR/code/future/bfd/src/bfdoff.c:1870: undefined reference to `BfdFsMiBfdHwStartBfd'
+/home/paiss/autobuild_BR/code/future/bfd/src/bfdoff.c:2016: undefined reference to `BfdFsMiBfdHwStartBfd'
+/home/paiss/autobuild_BR/code/future/bfd/obj/FutureBFD.o: In function `BfdOffSessStop':
+/home/paiss/autobuild_BR/code/future/bfd/src/bfdoff.c:2398: undefined reference to `BfdFsMiBfdHwStopBfd'
+/home/paiss/autobuild_BR/code/future/bfd/obj/FutureBFD.o: In function `BfdOffSessRegCb':
+/home/paiss/autobuild_BR/code/future/bfd/src/bfdoff.c:2434: undefined reference to `BfdFsMiBfdHwRegisterSessionCb'
+/home/paiss/autobuild_BR/code/future/bfd/obj/FutureBFD.o: In function `BfdOffSessInfo':
+/home/paiss/autobuild_BR/code/future/bfd/src/bfdoff.c:2518: undefined reference to `BfdFsMiBfdGetHwBfdParameters'
+/home/paiss/autobuild_BR/code/future/bfd/src/bfdoff.c:2555: undefined reference to `BfdFsMiBfdGetHwBfdSessionStats'
+/home/paiss/autobuild_BR/code/future/bfd/src/bfdoff.c:2591: undefined reference to `BfdFsMiBfdHwClearBfdStats'
+/home/paiss/autobuild_BR/code/future/bfd/src/bfdoff.c:2606: undefined reference to `BfdFsMiBfdHwClearBfdStats'

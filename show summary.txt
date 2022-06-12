@@ -1,0 +1,261 @@
+Node1
+
+ISS# show mpls l2 summary
+
+Local intf  Local circuit   Dest address       PW Status           VC ID
+----------  -------------   -------------      ---------------     -----------
+ acGi0/13.100  Ethernet        -                  down                2
+
+ -            Eth VLAN        -                  down                4
+
+
+ Total number of PWs
+ unknown: 0
+ up: 0
+ down: 2
+ dormant:  0
+ lowerlayerdown: 0
+ admin down: 0
+
+ISS# show bfd session summary
+
+Context default
+Session Index:12
+Session Status : enabled, Session Admin Status : start
+Version:1,  desired tx interval:1s , required rx interval:1s
+Multiplier:3, diag:0, My discr:12, your discr:0, state DOWN, D/C/M/A:0/0/0/0
+
+Context default
+Session Index:13
+Session Status : disabled, Session Admin Status : start
+Version:1,  desired tx interval:1s , required rx interval:1s
+Multiplier:3, diag:0, My discr:13, your discr:0, state DOWN, D/C/M/A:0/0/0/0
+
+ISS# show aps ring
+
+ Switch default
+
+Ring Id 1
+---------------------------------------------------------
+Ring Name                         : Ring1
+RAPS Vlan Id                      : 6150
+Operating Mode                    : Revertive
+Recovery Method                   : Auto
+ERPS Compatible Version           : Version2
+Ring State                        : Protection
+Status                            : Active
+Wait-to-restore timer             : Not Running
+Wait-to-block timer               : Not Running
+Hold timer                        : Not Running
+Guard timer                       : Not Running
+TC Propagation Status             : Disable
+TC Propagation Ring List          : None
+Inter Connection Node             : none
+Multiple Failure                  : Disabled
+Monitoring Mechanism              : MPLS Oam
+
+
+Node ID, BPR bit Pair
+=====================
+Ring Port 1 - (00:00:00:00:00:00   , 0)
+Ring Port 2 - (00:00:00:00:00:00   , 0)
+
+
+This node is RPL Neighbour. RPL Neighbour port is pw2
+
+Ring node is configured with virtual channel
+
+ Ring Port         Link Status      Command        Port Status
+-----------------------------------------------------------------
+ pw2               Failed            None           Blocked
+ pw12              Not Failed        None           UnBlocked
+
+Line Card Information
+-----------------------
+Ring Port 1 (pw2): Local
+Ring Port 2 (pw12): Local
+
+Ring Port1 SubPortList
+----------------------
+ pw 4
+Ring Port2 SubPortList
+----------------------
+ pw 14
+
+
+
+
+
+
+Node2
+
+ISS# show mpls l2 summary
+
+Local intf  Local circuit   Dest address       PW Status           VC ID
+----------  -------------   -------------      ---------------     -----------
+ acGi0/13.100  Ethernet        -                  down                1
+
+ acGi0/13.100  Ethernet        -                  down                2
+
+ -            Eth VLAN        -                  down                3
+
+ -            Eth VLAN        -                  down                4
+
+
+ Total number of PWs
+ unknown: 0
+ up: 0
+ down: 4
+ dormant:  0
+ lowerlayerdown: 0
+ admin down: 0
+
+ISS# show bfd session summary
+
+Context default
+Session Index:12
+Session Status : disabled, Session Admin Status : start
+Version:1,  desired tx interval:1s , required rx interval:1s
+Multiplier:3, diag:0, My discr:12, your discr:0, state DOWN, D/C/M/A:0/0/0/0
+
+Context default
+Session Index:13
+Session Status : disabled, Session Admin Status : start
+Version:1,  desired tx interval:1s , required rx interval:1s
+Multiplier:3, diag:0, My discr:13, your discr:0, state DOWN, D/C/M/A:0/0/0/0
+
+ISS# show aps ring
+
+ Switch default
+
+Ring Id 1
+---------------------------------------------------------
+Ring Name                         : Ring1
+RAPS Vlan Id                      : 6150
+Operating Mode                    : Revertive
+Recovery Method                   : Auto
+ERPS Compatible Version           : Version2
+Ring State                        : Protection
+Status                            : Active
+Wait-to-restore timer             : Not Running
+Wait-to-block timer               : Not Running
+Hold timer                        : Not Running
+Guard timer                       : Not Running
+TC Propagation Status             : Disable
+TC Propagation Ring List          : None
+Inter Connection Node             : none
+Multiple Failure                  : Disabled
+Monitoring Mechanism              : MPLS Oam
+
+
+Node ID, BPR bit Pair
+=====================
+Ring Port 1 - (00:00:00:00:00:00   , 0)
+Ring Port 2 - (00:00:00:00:00:00   , 0)
+
+
+This node is RPL Owner. RPL Port is pw2
+
+Ring node is configured with virtual channel
+
+ Ring Port         Link Status      Command        Port Status
+-----------------------------------------------------------------
+ pw1               Failed            None           Blocked
+ pw2               Failed            None           Blocked
+
+Line Card Information
+-----------------------
+Ring Port 1 (pw1): Local
+Ring Port 2 (pw2): Local
+
+Ring Port1 SubPortList
+----------------------
+
+Ring Port2 SubPortList
+----------------------
+
+
+Node3
+
+ISS# show mpls l2 summary
+
+Local intf  Local circuit   Dest address       PW Status           VC ID
+----------  -------------   -------------      ---------------     -----------
+ acGi0/13.100  Ethernet        -                  down                1
+
+ acGi0/13.100  Ethernet        -                  down                12
+
+ -            Eth VLAN        -                  down                3
+
+ -            Eth VLAN        -                  down                14
+
+
+ Total number of PWs
+ unknown: 0
+ up: 0
+ down: 4
+ dormant:  0
+ lowerlayerdown: 0
+ admin down: 0
+ISS# show bfd session summary
+
+Context default
+Session Index:12
+Session Status : enabled, Session Admin Status : start
+Version:1,  desired tx interval:1s , required rx interval:1s
+Multiplier:3, diag:0, My discr:12, your discr:0, state DOWN, D/C/M/A:0/0/0/0
+
+Context default
+Session Index:13
+Session Status : disabled, Session Admin Status : start
+Version:1,  desired tx interval:1s , required rx interval:1s
+Multiplier:3, diag:0, My discr:13, your discr:0, state DOWN, D/C/M/A:0/0/0/0
+
+ISS# show aps ring
+
+ Switch default
+
+Ring Id 1
+---------------------------------------------------------
+Ring Name                         : Ring1
+RAPS Vlan Id                      : 6150
+Operating Mode                    : Revertive
+Recovery Method                   : Auto
+ERPS Compatible Version           : Version2
+Ring State                        : Protection
+Status                            : Active
+Wait-to-restore timer             : Not Running
+Wait-to-block timer               : Not Running
+Hold timer                        : Not Running
+Guard timer                       : Not Running
+TC Propagation Status             : Disable
+TC Propagation Ring List          : None
+Inter Connection Node             : none
+Multiple Failure                  : Disabled
+Monitoring Mechanism              : MPLS Oam
+
+
+Node ID, BPR bit Pair
+=====================
+Ring Port 1 - (00:00:00:00:00:00   , 0)
+Ring Port 2 - (00:00:00:00:00:00   , 0)
+
+
+Ring node is configured with virtual channel
+
+ Ring Port         Link Status      Command        Port Status
+-----------------------------------------------------------------
+ pw1               Failed            None           Blocked
+ pw12              Failed            None           Blocked
+
+Line Card Information
+-----------------------
+Ring Port 1 (pw1): Local
+Ring Port 2 (pw12): Local
+
+Ring Port1 SubPortList
+----------------------
+ pw 3
+Ring Port2 SubPortList
+----------------------
+ pw 14

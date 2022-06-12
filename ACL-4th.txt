@@ -1,0 +1,528 @@
+configure terminal
+mac access-list extended 125
+permit any any vlan 135 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 126
+permit any any vlan 136 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 127
+permit any any vlan 137 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 128
+permit any any vlan 138 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 129
+permit any any vlan 139 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 130
+permit any any vlan 140 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 131
+permit any any vlan 141 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 132
+permit any any vlan 142 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 133
+permit any any vlan 143 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 134
+permit any any vlan 144 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 135
+permit any any vlan 145 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 136
+permit any any vlan 146 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 137
+permit any any vlan 147 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 138
+permit any any vlan 148 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 139
+permit any any vlan 149 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 140
+permit any any vlan 150 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 141
+permit any any vlan 151 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 142
+permit any any vlan 152 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 143
+permit any any vlan 153 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 144
+permit any any vlan 154 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 145
+permit any any vlan 155 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 146
+permit any any vlan 156 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 147
+permit any any vlan 157 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 148
+permit any any vlan 158 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 149
+permit any any vlan 159 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 150
+permit any any vlan 160 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 151
+permit any any vlan 161 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 152
+permit any any vlan 162 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 153
+permit any any vlan 163 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 154
+permit any any vlan 164 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 155
+permit any any vlan 165 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 156
+permit any any vlan 166 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 157
+permit any any vlan 167 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 158
+permit any any vlan 168 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 159
+permit any any vlan 169 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 160
+permit any any vlan 170 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 161
+permit any any vlan 171 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 162
+permit any any vlan 172 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 163
+permit any any vlan 173 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 164
+permit any any vlan 174 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 165
+permit any any vlan 175 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 166
+permit any any vlan 176 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 167
+permit any any vlan 177 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 168
+permit any any vlan 178 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 169
+permit any any vlan 179 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 170
+permit any any vlan 180 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 171
+permit any any vlan 181 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 172
+permit any any vlan 182 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 173
+permit any any vlan 183 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 174
+permit any any vlan 184 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 175
+permit any any vlan 185 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 176
+permit any any vlan 186 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 177
+permit any any vlan 187 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 178
+permit any any vlan 188 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 179
+permit any any vlan 189 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 180
+permit any any vlan 190 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 181
+permit any any vlan 191 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 182
+permit any any vlan 192 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 183
+permit any any vlan 193 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 184
+permit any any vlan 194 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 185
+permit any any vlan 195 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 186
+permit any any vlan 196 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 187
+permit any any vlan 197 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 188
+permit any any vlan 198 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 189
+permit any any vlan 199 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 190
+permit any any vlan 200 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 191
+permit any any vlan 201 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 192
+permit any any vlan 202 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 193
+permit any any vlan 203 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 194
+permit any any vlan 204 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 195
+permit any any vlan 205 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 196
+permit any any vlan 206 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 197
+permit any any vlan 207 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 198
+permit any any vlan 208 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 199
+permit any any vlan 209 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 200
+permit any any vlan 210 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 201
+permit any any vlan 211 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 202
+permit any any vlan 212 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 203
+permit any any vlan 213 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 204
+permit any any vlan 214 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 205
+permit any any vlan 215 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 206
+permit any any vlan 216 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 207
+permit any any vlan 217 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 208
+permit any any vlan 218 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 209
+permit any any vlan 219 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 210
+permit any any vlan 220 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 211
+permit any any vlan 221 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 212
+permit any any vlan 222 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 213
+permit any any vlan 223 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 214
+permit any any vlan 224 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 215
+permit any any vlan 225 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 216
+permit any any vlan 226 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 217
+permit any any vlan 227 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 218
+permit any any vlan 228 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 219
+permit any any vlan 229 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 220
+permit any any vlan 230 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 221
+permit any any vlan 231 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 222
+permit any any vlan 232 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 223
+permit any any vlan 233 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 224
+permit any any vlan 234 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 225
+permit any any vlan 235 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 226
+permit any any vlan 236 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 227
+permit any any vlan 237 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 228
+permit any any vlan 238 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 229
+permit any any vlan 239 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 230
+permit any any vlan 240 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 231
+permit any any vlan 241 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 232
+permit any any vlan 242 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 233
+permit any any vlan 243 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 234
+permit any any vlan 244 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 235
+permit any any vlan 245 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 236
+permit any any vlan 246 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 237
+permit any any vlan 247 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 238
+permit any any vlan 248 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 239
+permit any any vlan 249 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 240
+permit any any vlan 250 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 241
+permit any any vlan 251 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 242
+permit any any vlan 252 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 243
+permit any any vlan 253 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 244
+permit any any vlan 254 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 245
+permit any any vlan 255 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 246
+permit any any vlan 256 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 247
+permit any any vlan 257 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 248
+permit any any vlan 258 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 249
+permit any any vlan 259 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 250
+permit any any vlan 260 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 251
+permit any any vlan 261 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 252
+permit any any vlan 262 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 253
+permit any any vlan 263 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 254
+permit any any vlan 264 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 255
+permit any any vlan 265 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 256
+permit any any vlan 266 priority 50 double-tag
+end

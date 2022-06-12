@@ -1,0 +1,4 @@
+show mpls l2 summary
+sh eth cfm errors
+sh bfd sess summ
+sh aps rin

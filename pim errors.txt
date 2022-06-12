@@ -1,0 +1,14 @@
+pim/src/pimnpapi.c:4094:   SnoopUtilGetVsiIdFromVlanId
+/pim/src/spimport.c:3183    SnoopUtilGetVlanIdFromVsiId
+
+
+
+/home/sat3/code/future/pim/obj/FuturePIM.o: In function `SPimPortCheckSGVlanId':
+ 49 /home/sat3/code/future/pim/src/spimport.c:3183: undefined reference to `SnoopUtilGetVlanIdFromVsiId'  -- snooping/snpcore/src/snputil.c here defined 
+
+
+
+
+
+ 50 /home/sat3/code/future/pim/obj/FuturePIM.o: In function `PimGetMcastFwdPortList':
+ 51 /home/sat3/code/future/pim/src/pimnpapi.c:4094: undefined reference to `SnoopUtilGetVsiIdFromVlanId'

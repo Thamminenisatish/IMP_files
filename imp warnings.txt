@@ -1,0 +1,8 @@
+redefined  -----  /*   */  comment
+
+stament with no effect ------- remove line
+
+unused variable ----     remove line
+
+unused parameter -----   UNUSED PARAM(  )
+

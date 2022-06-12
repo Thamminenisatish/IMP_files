@@ -1,0 +1,51 @@
+To run the target regression:
+
+In the target:
+copy your ISS.exe in the /home/application
+vi init.sh
+-------> uncomment appmon.exe
+reboot
+comes to your iss prompt
+
+if the page is already in iss prompt and if you need to change anything in home/application follow the below steps.
+c t
+hw
+hw shell
+stty echo
+vi init.sh
+comment appmon.exe
+stty -echo
+exit
+end
+reload
+
+/home/PQA/pqatestsuite 
+vi config/config.target.exp 
+------->set General(MultipleTarget) "true"  (set as false to run simulation regression or keep it as true to run target regression)
+vi main.exp
+------->set yesStr  "siva" (set the name whatever you want or simply yes)
+vi config/tcList.pqastp.txt (contains the list of testcases to be run)
+/home/PQA/pqatestsuite/testscripts/pqastp  - Test Scripts (contains the test scripts, from here choose the test cases to run and add
+it in tcList.pqastp.txt)  
+set the test case to Yes string or change the name as you mentioned in set yesStr)
+./init (to run the test scrpits)
+
+cd /home/PQA/log/  ----> check the log
+
+
+To run simulation regression:
+
+copy the Image(ISS.exe) to /home/PQA/code/future/LR
+
+/home/PQA/pqatestsuite 
+vi config/config.target.exp 
+------->set General(MultipleTarget) "true"  (set as false to run simulation regression or keep it as true to run target regression)
+vi main.exp
+------->set yesStr  "siva" (set the name whatever you want or simply yes)
+vi config/tcList.pqastp.txt (contains the list of testcases to be run)
+/home/PQA/pqatestsuite/testscripts/pqastp  - Test Scripts (contains the test scripts, from here choose the test cases to run and add
+it in tcList.pqastp.txt)  
+set the test case to Yes string or change the name as you mentioned in set yesStr)
+./init (to run the test scrpits)
+
+cd /home/PQA/log/  ----> check the log

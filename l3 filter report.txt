@@ -1,0 +1,72 @@
+ISS# sh access-lists
+
+IP ACCESS LISTS
+-----------------
+
+Extended IP Access List 1001
+-----------------------------
+ Filter Priority                  : 50
+ Filter Fragment                  : False
+ Filter Protocol Type             : ANY
+ IP address Type                  : IPV4
+ Source IP address                : 1.0.0.0
+ Source IP address mask           : 255.0.0.0
+ Source IP Prefix Length          : 8
+ Destination IP address           : ANY
+ Destination IP address mask      : ANY
+ Destination IP Prefix Length     : 0
+ Flow Identifier                  : 0
+ In Port List                     : Gi0/4
+ In Port Channel List             : NIL
+ Out Port List                    : NIL
+ Out Port Channel List            : NIL
+ Vep List                         : NIL Filter TOS                       : None
+ Filter DSCP                      : NIL
+ Control Protocol Type            : NONE
+ Service Vlan                     : 0
+ Service Vlan Priority            : None
+ Customer Vlan                    : 0
+ Customer Vlan Priority           : None
+ Packet Tag Type                  : Single-tag
+ Filter Action                    : Deny
+ Redirect Port List               :
+ Filter Creation Mode             : External
+ Status                           : Active
+ Counter Status                   : Disabled
+ Match Count                      : 0
+
+
+
+
+
+Extended IP Access List 1027
+-----------------------------
+ Filter Priority                  : 50
+ Filter Fragment                  : False
+ Filter Protocol Type             : ANY
+ IP address Type                  : IPV4
+ Source IP address                : 1.0.0.0
+ Source IP address mask           : 255.0.0.0
+ Source IP Prefix Length          : 8
+ Destination IP address           : ANY
+ Destination IP address mask      : ANY
+ Destination IP Prefix Length     : 0
+ Flow Identifier                  : 0
+ In Port List                     : Gi0/4
+ In Port Channel List             : NIL
+ Out Port List                    : NIL
+ Out Port Channel List            : NIL
+ Vep List                         : NIL Filter TOS                       : None
+ Filter DSCP                      : NIL
+ Control Protocol Type            : NONE
+ Service Vlan                     : 0
+ Service Vlan Priority            : None
+ Customer Vlan                    : 0
+ Customer Vlan Priority           : None
+ Packet Tag Type                  : Single-tag
+ Filter Action                    : Deny
+ Redirect Port List               :
+ Filter Creation Mode             : External
+ Status                           : Active
+ Counter Status                   : Disabled
+ Match Count                      : 0

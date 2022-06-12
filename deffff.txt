@@ -1,0 +1,28 @@
+Interface    Status   Protocol  Description   SFP Status
+---------    ------   --------  -----------   ----------
+Gi0/1        up       up            Not Present
+Gi0/2        up       up            Not Present
+Gi0/3        up       up            Not Present
+Gi0/4        up       up            Not Present
+Gi0/5        up       up            Not Present
+Gi0/6        up       up            Not Present
+Gi0/7        up       up            Not Present
+Gi0/8        up       up            Not Present
+Gi0/9        down     down          Not Present
+Gi0/10       down     down          Not Present
+Gi0/11       down     down          Not Present
+Gi0/12       down     down          Not Present
+Gi0/13       down     down          Not Present
+Gi0/14       down     down          Not Present
+Gi0/15       down     down          Not Present
+Gi0/16       down     down          Not Present
+po100        up       down          Not Present
+vlan1        up       down          Not Present
+
+
+
+
+Group  Port-channel    Protocol   Ports
+-------------------------------------------------------------------------
+100    Po100(D)[AU,OD] LACP       Gi0/1(D),Gi0/2(D),Gi0/3(D),Gi0/4(D)
+                                  Gi0/5(D),Gi0/6(D),Gi0/7(D),Gi0/8(D)

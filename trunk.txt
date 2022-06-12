@@ -1,0 +1,37 @@
+S, Kavin13:11configure terminal
+set gvrp disable
+set gmrp disable
+set port-channel enable
+set lldp enable
+shutdown garp
+end
+configure terminal
+no shut port-channel
+channel-protocol lacp
+interface port-channel 100
+no shutdown
+end
+#configure terminal
+#interface port-channel 200
+#no shutdown
+#end
+configure terminal
+interface gigabitethernet 0/1
+map switch default
+no shutdown
+channel-group 100 mode active
+end
+configure terminal
+interface gigabitethernet 0/2
+map switch default
+no shutdown
+channel-group 100 mode active
+end
+configure terminal
+vlan 1
+ports add po 100
+exit
+interface vlan 1
+ip address 33.1 255.0
+no shutdown
+end

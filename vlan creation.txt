@@ -1,0 +1,3608 @@
+configure terminal
+interface gi 0/3
+shutdown
+end
+
+configure terminal
+shutdown spanning-tree
+interface gi 0/4
+shutdown
+no shutdown
+end
+
+configure terminal
+interface gi 0/3
+shutdown
+no shutdown
+end
+
+configure terminal 
+vlan 2
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 3
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 4
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 5
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+configure terminal 
+vlan 6
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+configure terminal 
+vlan 7
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 8
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 9
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 10
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 11
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 12
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 13
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 14
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 15
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 16
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 17
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 18
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 19
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 20
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 21
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 22
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 23
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 24
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 25
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 26
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 27
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 28
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 29
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 30
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 31
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 32
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 33
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 34
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 35
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 36
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 37
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 38
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 39
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 40
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 41
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 42
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 43
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 44
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 45
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 46
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 47
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 48
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 49
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 50
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 51
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 52
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 53
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 54
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 55
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 56
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 57
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 58
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 59
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 60
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 61
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 62
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 63
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 64
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 65
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 66
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 67
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 68
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 69
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 70
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 71
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 72
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 73
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 74
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 75
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 76
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 77
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 78
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 79
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 80
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 81
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 82
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 83
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 84
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 85
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 86
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 87
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 88
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 89
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 90
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 91
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 92
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 93
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 94
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 95
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 96
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 97
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 98
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 99
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 100
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 101
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 102
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 103
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 104
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 105
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 106
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 107
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 108
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 109
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 110
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 111
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 112
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 113
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 114
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 115
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 116
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 117
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 118
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 119
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 120
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 121
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 122
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 123
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 124
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 125
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 126
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 127
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 128
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 129
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 130
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 131
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 132
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 133
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 134
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 135
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 136
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 137
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 138
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 139
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 140
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 141
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 142
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 143
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 144
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 145
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 146
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 147
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 148
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 149
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 150
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 151
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 152
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 153
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 154
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 155
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 156
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 157
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 158
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 159
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 160
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 161
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 162
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 163
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 164
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 165
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 166
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 167
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 168
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 169
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 170
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 171
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 172
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 173
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 174
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 175
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 176
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 177
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 178
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 179
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 180
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 181
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 182
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 183
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 184
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 185
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 186
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 187
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 188
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 189
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 190
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 191
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 192
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 193
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 194
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 195
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 196
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 197
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 198
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 199
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 200
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 201
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 202
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 203
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 204
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 205
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 206
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 207
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 208
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 209
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 210
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 211
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 212
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 213
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 214
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 215
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 216
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 217
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 218
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 219
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 220
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 221
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 222
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 223
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 224
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 225
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 226
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 227
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 228
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 229
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 230
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 231
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 232
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 233
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 234
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 235
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 236
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 237
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 238
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 239
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 240
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 241
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 242
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 243
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 244
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 245
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 246
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 247
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 248
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 249
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 250
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 251
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 252
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 253
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 254
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 255
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 256
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 257
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 258
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 259
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 260
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 261
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 262
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 263
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 264
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 265
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 266
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 267
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 268
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 269
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 270
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 271
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 272
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 273
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 274
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 275
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 276
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 277
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 278
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 279
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 280
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 281
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 282
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 283
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 284
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 285
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 286
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 287
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 288
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+
+configure terminal 
+vlan 289
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+
+configure terminal 
+vlan 290
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+
+configure terminal 
+vlan 291
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+
+configure terminal 
+vlan 292
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+
+configure terminal 
+vlan 293
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+
+configure terminal 
+vlan 294
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+
+configure terminal 
+vlan 295
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+
+configure terminal 
+vlan 296
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+
+configure terminal 
+vlan 297
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+
+configure terminal 
+vlan 298
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+
+configure terminal 
+vlan 299
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+
+configure terminal 
+vlan 300
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+
+configure terminal 
+vlan 301
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+
+configure terminal 
+vlan 302
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+
+configure terminal 
+vlan 303
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+
+configure terminal 
+vlan 304
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+
+configure terminal 
+vlan 305
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+
+configure terminal 
+vlan 306
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+
+configure terminal 
+vlan 307
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+
+
+configure terminal
+mac access-list extended 1
+deny any any vlan 11 priority 50 svlan-id 2 double-tag
+end
+configure terminal
+mac access-list extended 2
+deny any any vlan 12 priority 50 svlan-id 3 cvlan-priority 2 svlan-priority 2 double-tag
+end
+configure terminal
+mac access-list extended 3
+deny any any vlan 13 priority 50 svlan-id 4 cvlan-priority 3 double-tag
+end
+configure terminal
+mac access-list extended 4
+deny any any vlan 14 priority 50 svlan-id 5 svlan-priority 4 double-tag
+end
+configure terminal
+mac access-list extended 5
+deny host 00:00:00:01:01:01 host 02:02:02:00:00:00 vlan 15 priority 50 double-tag
+deny any any vlan 15 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 6
+deny any any vlan 16 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 7
+deny any any vlan 17 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 8
+deny any any vlan 18 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 9
+deny any any vlan 19 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 10
+deny any any vlan 20 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 11
+deny any any vlan 21 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 12
+deny any any vlan 22 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 13
+deny any any vlan 23 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 14
+deny any any vlan 24 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 15
+deny any any vlan 25 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 16
+deny any any vlan 26 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 17
+deny any any vlan 27 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 18
+deny any any vlan 28 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 19
+deny any any vlan 29 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 20
+deny any any vlan 30 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 21
+deny any any vlan 31 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 22
+deny any any vlan 32 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 23
+deny any any vlan 33 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 24
+deny any any vlan 34 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 25
+deny any any vlan 35 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 26
+deny any any vlan 36 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 27
+deny any any vlan 37 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 28
+deny any any vlan 38 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 29
+deny any any vlan 39 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 30
+deny any any vlan 40 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 31
+deny any any vlan 41 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 32
+deny any any vlan 42 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 33
+deny any any vlan 43 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 34
+deny any any vlan 44 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 35
+deny any any vlan 45 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 36
+deny any any vlan 46 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 37
+deny any any vlan 47 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 38
+deny any any vlan 48 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 39
+deny any any vlan 49 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 40
+deny any any vlan 50 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 41
+deny any any vlan 51 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 42
+deny any any vlan 52 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 43
+deny any any vlan 53 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 44
+deny any any vlan 54 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 45
+deny any any vlan 55 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 46
+deny any any vlan 56 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 47
+deny any any vlan 57 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 48
+deny any any vlan 58 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 49
+deny any any vlan 59 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 50
+deny any any vlan 60 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 51
+deny any any vlan 61 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 52
+deny any any vlan 62 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 53
+deny any any vlan 63 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 54
+deny any any vlan 64 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 55
+deny any any vlan 65 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 56
+deny any any vlan 66 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 57
+deny any any vlan 67 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 58
+deny any any vlan 68 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 59
+deny any any vlan 69 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 60
+deny any any vlan 70 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 61
+deny any any vlan 71 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 62
+deny any any vlan 72 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 63
+deny any any vlan 73 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 64
+deny any any vlan 74 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 65
+deny any any vlan 75 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 66
+deny any any vlan 76 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 67
+deny any any vlan 77 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 68
+deny any any vlan 78 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 69
+deny any any vlan 79 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 70
+deny any any vlan 80 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 71
+deny any any vlan 81 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 72
+deny any any vlan 82 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 73
+deny any any vlan 83 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 74
+deny any any vlan 84 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 75
+deny any any vlan 85 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 76
+deny any any vlan 86 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 77
+deny any any vlan 87 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 78
+deny any any vlan 88 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 79
+deny any any vlan 89 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 80
+deny any any vlan 90 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 81
+deny any any vlan 91 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 82
+deny any any vlan 92 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 83
+deny any any vlan 93 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 84
+deny any any vlan 94 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 85
+deny any any vlan 95 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 86
+deny any any vlan 96 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 87
+deny any any vlan 97 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 88
+deny any any vlan 98 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 89
+deny any any vlan 99 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 90
+deny any any vlan 100 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 91
+deny any any vlan 101 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 92
+deny any any vlan 102 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 93
+deny any any vlan 103 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 94
+deny any any vlan 104 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 95
+deny any any vlan 105 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 96
+deny any any vlan 106 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 97
+deny any any vlan 107 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 98
+deny any any vlan 108 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 99
+deny any any vlan 109 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 100
+deny any any vlan 110 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 101
+deny any any vlan 111 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 102
+deny any any vlan 112 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 103
+deny any any vlan 113 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 104
+deny any any vlan 114 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 105
+deny any any vlan 115 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 106
+deny any any vlan 116 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 107
+deny any any vlan 117 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 108
+deny any any vlan 118 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 109
+deny any any vlan 119 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 110
+deny any any vlan 120 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 111
+deny any any vlan 121 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 112
+deny any any vlan 122 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 113
+deny any any vlan 123 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 114
+deny any any vlan 124 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 115
+deny any any vlan 125 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 116
+deny any any vlan 126 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 117
+deny any any vlan 127 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 118
+deny any any vlan 128 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 119
+deny any any vlan 129 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 120
+deny any any vlan 130 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 121
+deny any any vlan 131 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 122
+deny any any vlan 132 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 123
+deny any any vlan 133 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 124
+deny any any vlan 134 priority 50 double-tag
+end
+
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 1 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 2 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 3 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 4 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 5 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 6 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 7 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 8 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 9 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 10 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 11 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 12 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 13 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 14 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 15 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 16 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 17 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 18 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 19 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 20 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 21 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 22 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 23 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 24 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 25 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 26 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 27 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 28 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 29 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 30 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 31 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 32 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 33 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 34 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 35 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 36 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 37 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 38 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 39 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 40 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 41 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 42 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 43 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 44 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 45 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 46 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 47 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 48 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 49 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 50 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 51 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 52 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 53 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 54 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 55 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 56 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 57 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 58 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 59 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 60 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 61 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 62 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 63 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 64 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 65 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 66 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 67 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 68 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 69 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 70 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 71 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 72 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 73 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 74 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 75 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 76 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 77 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 78 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 79 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 80 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 81 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 82 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 83 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 84 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 85 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 86 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 87 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 88 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 89 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 90 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 91 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 92 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 93 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 94 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 95 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 96 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 97 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 98 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 99 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 100 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 101 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 102 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 103 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 104 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 105 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 106 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 107 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 108 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 109 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 110 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 111 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 112 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 113 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 114 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 115 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 116 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 117 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 118 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 119 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 120 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 121 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 122 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 123 in
+end
+configure terminal
+interface gigabitethernet 0/4
+mac access-group 124 in
+end
+
+
+configure terminal
+mac access-list extended 125
+permit any any vlan 135 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 126
+permit any any vlan 136 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 127
+permit any any vlan 137 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 128
+permit any any vlan 138 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 129
+permit any any vlan 139 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 130
+permit any any vlan 140 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 131
+permit any any vlan 141 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 132
+permit any any vlan 142 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 133
+permit any any vlan 143 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 134
+permit any any vlan 144 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 135
+permit any any vlan 145 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 136
+permit any any vlan 146 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 137
+permit any any vlan 147 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 138
+permit any any vlan 148 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 139
+permit any any vlan 149 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 140
+permit any any vlan 150 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 141
+permit any any vlan 151 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 142
+permit any any vlan 152 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 143
+permit any any vlan 153 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 144
+permit any any vlan 154 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 145
+permit any any vlan 155 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 146
+permit any any vlan 156 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 147
+permit any any vlan 157 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 148
+permit any any vlan 158 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 149
+permit any any vlan 159 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 150
+permit any any vlan 160 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 151
+permit any any vlan 161 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 152
+permit any any vlan 162 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 153
+permit any any vlan 163 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 154
+permit any any vlan 164 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 155
+permit any any vlan 165 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 156
+permit any any vlan 166 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 157
+permit any any vlan 167 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 158
+permit any any vlan 168 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 159
+permit any any vlan 169 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 160
+permit any any vlan 170 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 161
+permit any any vlan 171 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 162
+permit any any vlan 172 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 163
+permit any any vlan 173 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 164
+permit any any vlan 174 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 165
+permit any any vlan 175 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 166
+permit any any vlan 176 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 167
+permit any any vlan 177 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 168
+permit any any vlan 178 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 169
+permit any any vlan 179 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 170
+permit any any vlan 180 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 171
+permit any any vlan 181 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 172
+permit any any vlan 182 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 173
+permit any any vlan 183 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 174
+permit any any vlan 184 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 175
+permit any any vlan 185 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 176
+permit any any vlan 186 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 177
+permit any any vlan 187 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 178
+permit any any vlan 188 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 179
+permit any any vlan 189 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 180
+permit any any vlan 190 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 181
+permit any any vlan 191 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 182
+permit any any vlan 192 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 183
+permit any any vlan 193 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 184
+permit any any vlan 194 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 185
+permit any any vlan 195 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 186
+permit any any vlan 196 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 187
+permit any any vlan 197 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 188
+permit any any vlan 198 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 189
+permit any any vlan 199 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 190
+permit any any vlan 200 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 191
+permit any any vlan 201 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 192
+permit any any vlan 202 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 193
+permit any any vlan 203 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 194
+permit any any vlan 204 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 195
+permit any any vlan 205 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 196
+permit any any vlan 206 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 197
+permit any any vlan 207 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 198
+permit any any vlan 208 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 199
+permit any any vlan 209 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 200
+permit any any vlan 210 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 201
+permit any any vlan 211 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 202
+permit any any vlan 212 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 203
+permit any any vlan 213 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 204
+permit any any vlan 214 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 205
+permit any any vlan 215 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 206
+permit any any vlan 216 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 207
+permit any any vlan 217 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 208
+permit any any vlan 218 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 209
+permit any any vlan 219 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 210
+permit any any vlan 220 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 211
+permit any any vlan 221 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 212
+permit any any vlan 222 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 213
+permit any any vlan 223 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 214
+permit any any vlan 224 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 215
+permit any any vlan 225 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 216
+permit any any vlan 226 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 217
+permit any any vlan 227 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 218
+permit any any vlan 228 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 219
+permit any any vlan 229 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 220
+permit any any vlan 230 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 221
+permit any any vlan 231 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 222
+permit any any vlan 232 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 223
+permit any any vlan 233 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 224
+permit any any vlan 234 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 225
+permit any any vlan 235 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 226
+permit any any vlan 236 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 227
+permit any any vlan 237 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 228
+permit any any vlan 238 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 229
+permit any any vlan 239 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 230
+permit any any vlan 240 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 231
+permit any any vlan 241 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 232
+permit any any vlan 242 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 233
+permit any any vlan 243 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 234
+permit any any vlan 244 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 235
+permit any any vlan 245 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 236
+permit any any vlan 246 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 237
+permit any any vlan 247 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 238
+permit any any vlan 248 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 239
+permit any any vlan 249 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 240
+permit any any vlan 250 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 241
+permit any any vlan 251 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 242
+permit any any vlan 252 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 243
+permit any any vlan 253 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 244
+permit any any vlan 254 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 245
+permit any any vlan 255 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 246
+permit any any vlan 256 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 247
+permit any any vlan 257 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 248
+permit any any vlan 258 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 249
+permit any any vlan 259 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 250
+permit any any vlan 260 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 251
+permit any any vlan 261 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 252
+permit any any vlan 262 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 253
+permit any any vlan 263 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 254
+permit any any vlan 264 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 255
+permit any any vlan 265 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 256
+permit any any vlan 266 priority 50 double-tag
+end
+
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 125 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 126 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 127 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 128 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 129 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 130 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 131 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 132 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 133 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 134 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 135 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 136 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 137 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 138 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 139 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 140 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 141 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 142 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 143 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 144 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 145 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 146 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 147 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 148 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 149 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 150 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 151 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 152 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 153 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 154 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 155 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 156 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 157 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 158 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 159 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 160 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 161 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 162 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 163 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 164 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 165 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 166 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 167 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 168 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 169 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 170 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 171 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 172 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 173 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 174 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 175 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 176 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 177 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 178 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 179 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 180 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 181 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 182 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 183 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 184 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 185 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 186 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 187 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 188 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 189 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 190 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 191 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 192 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 193 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 194 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 195 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 196 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 197 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 198 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 199 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 200 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 201 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 202 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 203 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 204 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 205 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 206 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 207 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 208 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 209 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 210 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 211 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 212 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 213 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 214 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 215 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 216 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 217 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 218 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 219 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 220 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 221 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 222 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 223 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 224 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 225 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 226 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 227 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 228 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 229 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 230 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 231 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 232 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 233 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 234 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 235 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 236 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 237 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 238 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 239 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 240 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 241 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 242 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 243 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 244 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 245 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 246 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 247 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 248 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 249 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 250 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 251 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 252 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 253 in
+end
+
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 254 in
+end
+
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 255 in
+end
+
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 256 in
+end
+
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 257 in
+end

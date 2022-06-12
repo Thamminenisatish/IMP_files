@@ -1,0 +1,9 @@
+1. ACL-1ST
+2. ACL-2ND
+3. ACL-3RD
+4. ACL-4TH
+5. ACL-5TH
+
+In ACL-1st script created VLANs above 300. When you run in target copy the script and paste of 20VLANs only at a time. Don't copy entire script at a time. After 20VLANs then copy next 20VLANs and paste in target. 
+
+After ACL-1st script then run next ACL-2nd,ACL-3rd,ACL-4th and ACL-5th. 

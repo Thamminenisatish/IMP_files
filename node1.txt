@@ -1,0 +1,234 @@
+configure terminal
+switch default
+shutdown spanning-tree
+set gmrp disable
+set gvrp disable
+shutdown garp
+shutdown spanning-tree
+end
+
+c t
+vlan 5
+ports gig 0/9
+end
+
+c t
+vlan 6
+ports gig 0/10
+end
+
+c t
+interface vlan 5
+shutdown
+ip unnumbered 01:00:5E:90:00:00
+no shutdown
+mpls ip
+exit
+en
+
+c t
+interface vlan 6
+shutdown
+ip unnumbered 01:00:5E:90:00:00
+no shutdown
+mpls ip
+end
+
+c t
+mpls global-id 100 icc-id ARI123 node-id 301
+mpls node-map-id local-map-num 10 global-id 100 node-id 101
+mpls node-map-id local-map-num 20 global-id 100 node-id 201
+mpls node-map-id local-map-num 30 global-id 100 node-id 301
+end
+
+c t
+interface mplstunnel 10
+tunnel mpls destination 30 source 10 lsp-num 1
+tunnel mode corouted-bidirectional
+tunnel type mpls-tp
+tunnel mpls static in-label 200007 vlan 5 direction forward
+tunnel mpls static out-label 200008 vlan 5 direction reverse
+no shutdown
+end
+
+c t
+interface mplstunnel 12
+tunnel mpls destination 30 source 20 lsp-num 1
+tunnel type mpls-tp
+tunnel mpls static in-label 200003 vlan 6 direction forward
+tunnel mpls static out-label 200004 vlan 6 direction reverse
+no shutdown
+end
+
+
+c t
+in gi 0/13
+vep-mode access
+vep-encap-type dot1q-vep
+map sw default
+no sh
+end
+
+c t
+int ac gi 0/13.100
+map sw default
+no sh
+end
+
+
+c t
+vsi 6150
+vsi vep-type any
+vsi service-type multipoint-to-multipoint
+ports add ac-gi 0/13.100
+no sh
+end
+
+c t
+int ac gi 0/13.200
+map sw default
+no sh
+end
+
+c t
+vsi 6151
+vsi vep-type any
+vsi service-type multipoint-to-multipoint
+ports add ac-gi 0/13.200
+no sh
+end
+
+c t
+l2 vfi VFI1 manual
+vpn 11 fdb 6150
+neighbor global-id 100 node-id 20 genfec agi AG123456 src-ac-id 30 dst-ac-id 20 pwid 12 locallabel 250004 remotelabel 250003 encapsulation mpls  no-split-horizon mplstype te 12 12
+neighbor global-id 100 node-id 10 genfec agi AG123456 src-ac-id 30 dst-ac-id 10 pwid 2 locallabel 250007 remotelabel 250008 encapsulation mpls  no-split-horizon mplstype te 10 10
+end
+
+c t
+l2 vfi VFI2 manual
+vpn 12 fdb 6151
+neighbor global-id 100 node-id 20 genfec agi AG123456 src-ac-id 30 dst-ac-id 20 pwid 14 locallabel 270004 remotelabel 270003 encapsulation mpls  no-split-horizon mplstype te 12 12
+neighbor global-id 100 node-id 10 genfec agi AG123456 src-ac-id 30 dst-ac-id 10 pwid 4 locallabel 270007 remotelabel 270008 encapsulation mpls  no-split-horizon mplstype te 10 10
+end
+
+c t
+in pw 2
+no shutdown
+ethernet cfm enable
+ethernet cfm y1731 enable
+en
+
+c t
+in pw 12
+no shutdown
+ethernet cfm enable
+ethernet cfm y1731 enable
+en
+
+c t
+in pw 4
+no shutdown
+en
+
+c t
+in pw 14
+no shutdown
+en
+
+c t
+map pwid 2 pw 2
+map pwid 12 pw 12
+map pwid 4 pw 4
+map pwid 14 pw 14
+end
+
+c t
+ethernet cfm start
+ethernet cfm enable
+ethernet cfm domain format dns-like-name name CUS6 level 6
+service format char-string name CUSMA1 vsi 6150
+mep crosscheck mpid 1 vsi 6150
+en
+
+c t
+eth cfm start
+eth cfm ena
+ethernet cfm domain format dns-like-name name CUS2 level 6
+service format char-string name CUSMA1 vsi 6150
+mep crosscheck mpid 1 vsi 6150
+en
+
+c t
+in pw 2
+ethernet cfm mep domain CUS6 mpid 1 service CUSMA1 active
+en
+
+c t
+in pw 12
+ethernet cfm mep domain CUS2 mpid 1 service CUSMA1 active
+en
+
+c t
+bfd glob off
+end
+c t
+mpls oam enable
+mpls oam meg meg1
+service me1
+ mpls oam mep service me1 lsp 10 1 10 30
+end
+
+configure terminal
+bfd session 12
+bfd params sess-type single-hop
+bfd mpls meg-name meg1 me-name me1
+bfd params mode cc
+bfd enable
+en
+
+configure terminal
+mpls oam enable
+mpls oam meg meg2
+service me1
+mpls oam mep service me1 lsp 12 1 20 30
+end
+
+c t
+bfd session 13
+bfd params sess-type single-hop
+bfd mpls meg-name meg2 me-name me1
+bfd params mode cc
+bfd enable
+en
+
+c t
+no shutdown aps ring
+aps ring enable
+aps ring group 1
+aps monitor mplsoam
+aps service mpls-lsp-pw
+aps compatible version v2
+aps working pw 2 pw 12 vlan 6150
+aps working pseudo-wire 2 pseudo-wire 12
+aps working meg 1 me 1 mep 1 meg 2 me 1 mep 1
+aps working subportlist pw 4 subportlist pw 14
+aps revert wtr 3 seconds
+aps nei pw 2
+end 
+ 
+c t
+int ac gi 0/13.100
+no sh
+xconnect vfi VFI1
+
+c t
+int ac gi 0/13.200
+no sh
+xconnect vfi VFI2
+end
+
+c t
+aps ring gr 1
+aps group activ
+end 

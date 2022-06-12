@@ -1,0 +1,1545 @@
+configure terminal
+interface gi 0/3
+shutdown
+end
+
+configure terminal
+shutdown spanning-tree
+interface gi 0/4
+shutdown
+no shutdown
+end
+
+configure terminal
+interface gi 0/3
+shutdown
+no shutdown
+end
+
+configure terminal 
+vlan 2
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 3
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 4
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 5
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+configure terminal 
+vlan 6
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+configure terminal 
+vlan 7
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 8
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 9
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 10
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 11
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 12
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 13
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 14
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 15
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 16
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 17
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 18
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 19
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 20
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 21
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 22
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 23
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 24
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 25
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 26
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 27
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 28
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 29
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 30
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 31
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 32
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 33
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 34
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 35
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 36
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 37
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 38
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 39
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 40
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 41
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 42
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 43
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 44
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 45
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 46
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 47
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 48
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 49
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 50
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 51
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 52
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 53
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 54
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 55
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 56
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 57
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 58
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 59
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 60
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 61
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 62
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 63
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 64
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 65
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 66
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 67
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 68
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 69
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 70
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 71
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 72
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 73
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 74
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 75
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 76
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 77
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 78
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 79
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 80
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 81
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 82
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 83
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 84
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 85
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 86
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 87
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 88
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 89
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 90
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 91
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 92
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 93
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 94
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 95
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 96
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 97
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 98
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 99
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 100
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 101
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 102
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 103
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 104
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 105
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 106
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 107
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 108
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 109
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 110
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 111
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 112
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 113
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 114
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 115
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 116
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 117
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 118
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 119
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 120
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 121
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 122
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 123
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 124
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 125
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 126
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 127
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 128
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 129
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 130
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 131
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 132
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 133
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 134
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 135
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 136
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 137
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 138
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 139
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 140
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 141
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 142
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 143
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 144
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 145
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 146
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 147
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 148
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 149
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 150
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 151
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 152
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 153
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 154
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 155
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 156
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 157
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 158
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 159
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 160
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 161
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 162
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 163
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 164
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 165
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 166
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 167
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 168
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 169
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 170
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 171
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 172
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 173
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 174
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 175
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 176
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 177
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 178
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 179
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 180
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 181
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 182
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 183
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 184
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 185
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 186
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 187
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 188
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 189
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 190
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 191
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 192
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 193
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 194
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 195
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 196
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 197
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 198
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 199
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 200
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 201
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 202
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 203
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 204
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 205
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 206
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 207
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 208
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 209
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 210
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 211
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 212
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 213
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 214
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 215
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 216
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 217
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 218
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 219
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 220
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 221
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 222
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 223
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 224
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 225
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 226
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 227
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 228
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 229
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 230
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 231
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 232
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 233
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 234
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 235
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 236
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 237
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 238
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 239
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 240
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 241
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 242
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 243
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 244
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 245
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 246
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 247
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 248
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 249
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 250
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 251
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 252
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 253
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 254
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 255
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 256
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 257
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 258
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 259
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 260
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 261
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 262
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 263
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 264
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 265
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 266
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 267
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 268
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 269
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 270
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 271
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 272
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 273
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 274
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 275
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 276
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 277
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 278
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 279
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 280
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 281
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 282
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 283
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 284
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 285
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 286
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 287
+ports gi 0/4,0/3 untagged gi 0/4 
+end
+
+configure terminal 
+vlan 288
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+
+configure terminal 
+vlan 289
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+
+configure terminal 
+vlan 290
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+
+configure terminal 
+vlan 291
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+
+configure terminal 
+vlan 292
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+
+configure terminal 
+vlan 293
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+
+configure terminal 
+vlan 294
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+
+configure terminal 
+vlan 295
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+
+configure terminal 
+vlan 296
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+
+configure terminal 
+vlan 297
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+
+configure terminal 
+vlan 298
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+
+configure terminal 
+vlan 299
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+
+configure terminal 
+vlan 300
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+
+configure terminal 
+vlan 301
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+
+configure terminal 
+vlan 302
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+
+configure terminal 
+vlan 303
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+
+configure terminal 
+vlan 304
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+
+configure terminal 
+vlan 305
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+
+configure terminal 
+vlan 306
+ports gi 0/4,0/3 untagged gi 0/4 
+end 
+
+configure terminal 
+vlan 307
+ports gi 0/4,0/3 untagged gi 0/4 
+end 

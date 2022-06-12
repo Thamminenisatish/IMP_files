@@ -1,0 +1,96 @@
+configure terminal
+set gvrp disable
+set gmrp disable
+set port-channel enable
+set lldp enable
+shutdown garp
+end
+
+configure terminal
+no shut port-channel
+channel-protocol lacp
+interface port-channel 100
+no shutdown
+end
+configure terminal
+no shut port-channel
+channel-protocol lacp
+interface port-channel 200
+no shutdown
+end
+configure terminal
+no shut port-channel
+channel-protocol lacp
+interface port-channel 300
+no shutdown
+end
+configure terminal
+no shut port-channel
+channel-protocol lacp
+interface port-channel 400
+no shutdown
+end
+configure terminal
+no shut port-channel
+channel-protocol lacp
+interface port-channel 500
+no shutdown
+end
+configure terminal
+no shut port-channel
+channel-protocol lacp
+interface port-channel 600
+no shutdown
+end
+configure terminal
+no shut port-channel
+channel-protocol lacp
+interface port-channel 700
+no shutdown
+end
+configure terminal
+no shut port-channel
+channel-protocol lacp
+interface port-channel 800
+no shutdown
+end
+configure terminal
+interface gigabitethernet 0/1
+no shutdown
+channel-group 100 mode active
+end
+configure terminal
+interface gigabitethernet 0/2
+no shutdown
+channel-group 200 mode active
+end
+configure terminal
+interface gigabitethernet 0/3
+no shutdown
+channel-group 300 mode active
+end
+configure terminal
+interface gigabitethernet 0/4
+no shutdown
+channel-group 400 mode active
+end
+configure terminal
+interface gigabitethernet 0/5
+no shutdown
+channel-group 500 mode active
+end
+configure terminal
+interface gigabitethernet 0/6
+no shutdown
+channel-group 600 mode active
+end
+configure terminal
+interface gigabitethernet 0/7
+no shutdown
+channel-group 700 mode active
+end
+configure terminal
+interface gigabitethernet 0/8
+no shutdown
+channel-group 800 mode active
+end

@@ -1,0 +1,536 @@
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 125 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 126 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 127 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 128 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 129 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 130 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 131 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 132 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 133 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 134 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 135 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 136 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 137 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 138 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 139 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 140 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 141 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 142 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 143 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 144 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 145 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 146 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 147 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 148 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 149 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 150 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 151 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 152 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 153 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 154 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 155 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 156 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 157 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 158 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 159 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 160 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 161 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 162 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 163 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 164 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 165 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 166 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 167 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 168 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 169 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 170 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 171 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 172 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 173 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 174 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 175 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 176 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 177 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 178 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 179 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 180 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 181 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 182 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 183 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 184 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 185 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 186 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 187 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 188 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 189 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 190 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 191 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 192 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 193 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 194 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 195 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 196 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 197 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 198 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 199 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 200 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 201 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 202 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 203 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 204 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 205 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 206 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 207 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 208 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 209 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 210 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 211 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 212 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 213 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 214 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 215 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 216 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 217 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 218 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 219 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 220 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 221 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 222 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 223 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 224 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 225 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 226 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 227 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 228 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 229 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 230 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 231 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 232 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 233 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 234 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 235 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 236 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 237 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 238 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 239 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 240 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 241 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 242 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 243 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 244 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 245 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 246 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 247 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 248 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 249 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 250 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 251 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 252 in
+end
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 253 in
+end
+
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 254 in
+end
+
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 255 in
+end
+
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 256 in
+end
+
+configure terminal
+interface gigabitethernet 0/4
+ mac access-group 257 in
+end

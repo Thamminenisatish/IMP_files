@@ -1,0 +1,102 @@
+configure terminal
+set gmrp disable
+set gvrp disable
+shutdown garp
+shutdown spanning-tree
+end
+
+c t
+int gi 0/1
+no shutdown
+end
+
+c t
+int gi 0/2
+no shut
+end
+
+c t
+int gi 0/3
+no shut
+end
+
+c t
+int gi 0/4
+no shut
+end
+
+c t
+vlan 1
+ports gi 0/1
+exit
+vlan 2
+ports gi 0/3
+end
+
+c t
+int gi 0/1
+switchport pvid 1
+end
+
+c t
+int gi 0/3
+switchport pvid 2
+end
+
+c t
+monitor session 1 source int gi 0/1 rx
+monitor session 1 destination int gi 0/2
+end
+
+c t
+monitor session 2 source int gi 0/3 rx
+monitor session 2 destination int gi 0/4
+end
+
+c t
+int gi 0/5
+no shutdown
+end
+
+c t
+int gi 0/6
+no shut
+end
+
+c t
+int gi 0/7
+no shut
+end
+
+c t
+int gi 0/8
+no shut
+end
+
+c t
+vlan 3
+ports gi 0/5
+exit
+vlan 4
+ports gi 0/7
+end
+
+c t
+int gi 0/5
+switchport pvid 3
+end
+
+c t
+int gi 0/7
+switchport pvid 4
+end
+
+c t
+monitor session 3 source int gi 0/5 rx
+monitor session 3 destination int gi 0/6
+end
+
+c t
+monitor session 4 source int gi 0/7 rx
+monitor session 4 destination int gi 0/8
+end

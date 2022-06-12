@@ -1,0 +1,158 @@
+ISS(config-mst)# instance 13 vlan 13
+ISS(config-mst)# instance 14 vlan 14
+ISS(config-mst)# instance 15 vlan 15
+ISS(config-mst)# instance 16 vlan 16
+ISS(config-mst)# instance 17 vlan 17
+ISS(config-mst)# instance 18 vlan 18
+ISS(config-mst)# instance 19 vlan 19
+ISS(config-mst)# instance 20 vlan 20
+ISS(config-mst)# instance 21 vlan 21
+ISS(config-mst)# instance 22 vlan 22
+ISS(config-mst)# instance 23 vlan 23
+ISS(config-mst)# instance 24 vlan 24
+ISS(config-mst)# instance 25 vlan 25
+ISS(config-mst)# instance 26 vlan 26
+ISS(config-mst)# instance 27 vlan 27
+ISS(config-mst)# instance 28 vlan 28
+ISS(config-mst)# instance 29 vlan 29
+ISS(config-mst)# instance 30 vlan 30
+ISS(config-mst)# instance 31 vlan 31
+ISS(config-mst)# instance 32 vlan 32
+ISS(config-mst)# instance 33 vlan 33
+ISS(config-mst)# instance 34 vlan 34
+ISS(config-mst)# instance 35 vlan 35
+ISS(config-mst)# instance 36 vlan 36
+ISS(config-mst)# instance 37 vlan 37
+ISS(config-mst)# instance 38 vlan 38
+ISS(config-mst)# instance 39 vlan 39
+ISS(config-mst)# instance 40 vlan 40
+ISS(config-mst)# instance 41 vlan 41
+ISS(config-mst)# instance 42 vlan 42
+ISS(config-mst)# instance 43 vlan 43
+ISS(config-mst)# instance 44 vlan 44
+ISS(config-mst)# instance 45 vlan 45
+ISS(config-mst)# instance 46 vlan 46
+ISS(config-mst)# instance 47 vlan 47
+ISS(config-mst)# instance 48 vlan 48
+ISS(config-mst)# instance 49 vlan 49
+ISS(config-mst)# instance 50 vlan 50
+ISS(config-mst)# instance 51 vlan 51
+ISS(config-mst)# instance 52 vlan 52
+ISS(config-mst)# instance 53 vlan 53
+ISS(config-mst)# instance 54 vlan 54
+ISS(config-mst)# instance 55 vlan 55
+ISS(config-mst)# instance 56 vlan 56
+ISS(config-mst)# instance 57 vlan 57
+ISS(config-mst)# instance 58 vlan 58
+ISS(config-mst)# instance 59 vlan 59
+ISS(config-mst)# instance 60 vlan 60
+ISS(config-mst)# instance 61 vlan 61
+ISS(config-mst)# instance 62 vlan 62
+ISS(config-mst)# instance 63 vlan 63
+ISS(config-mst)# instance 64 vlan 64
+ISS(config-mst)# instance 65 vlan 65
+% No Of Active Instances reaches MaxMstInst Value
+ISS(config-mst)# end
+ISS#
+ISS# sh spanning-tree mst configuration
+
+Switch default
+
+Name            [region1]
+Revision        0
+Max-Instance    64
+Instance        Vlans mapped
+ --------      ------------------------------------------
+  0              65-1024,1025-2048,2049-3072,3073-4094,4100-8195
+  1              1
+  2              2
+  3              3
+  4              4
+  5              5
+  6              6
+  7              7
+  8              8
+  9              9
+  10             10
+  11             11
+  12             12
+  13             13
+  14             14
+  15             15
+  16             16
+  17             17
+  18             18
+  19             19
+  20             20
+  21             21
+  22             22
+  23             23
+  24             24
+  25             25
+  26             26
+  27             27
+  28             28
+  29             29
+  30             30
+  31             31
+  32             32
+  33             33
+  34             34
+  35             35
+  36             36
+  37             37
+  38             38
+  39             39
+  40             40
+  41             41
+  42             42
+  43             43
+  44	         44
+  45	         45
+  46		 46
+  47		 47
+  48		 48
+  49		 49
+  50		 50
+  51		 51
+  52		 52
+  53		 53
+  54		 54
+  55		 55
+  56		 56
+  57		 57
+  58		 58
+  59		 59
+  60		 60
+  61		 61
+  62		 62
+  63		 63
+  64		 64
+ -------------------------------------------------------
+
+ISS# sh spanning-tree mst 1
+
+Switch default
+
+ ## MST01
+Vlans mapped:    1
+Bridge     Address 80:a2:35:f6:96:28    Priority 32768
+Root       Address 80:a2:35:f6:96:28    Priority 32768
+Root       this switch for MST01
+
+Interface Role         Sts          Cost     Prio.Nbr Type
+--------- ----         ---          ----     -------- ----
+
+
+ISS# sh spanning-tree mst 25
+
+Switch default
+
+ ## MST25
+Vlans mapped:    25
+Bridge     Address 80:a2:35:f6:96:28    Priority 32768
+Root       Address 80:a2:35:f6:96:28    Priority 32768
+Root       this switch for MST25
+
+Interface Role         Sts          Cost     Prio.Nbr Type
+--------- ----         ---          ----     -------- ----

@@ -1,0 +1,8 @@
+1	14 Jan 2022 / Friday	Pongal/ Makar Sankranti
+2	26 Jan 2022 / Wednesday	Republic Day
+3	14 Apr 2022 / Thursday	Tamil New Year Day/ Ambedkar jayanti/Mahavir Jayanthi
+4	03 May 2022 / Tuesday	Ramzan / Id-ul-fitr /Basava Jayanthi
+5	15 Aug 2022 / Monday	Independence Day
+6	31 Aug 2022 / Wednesday	Ganesh Chaturthi
+7	05 Oct 2022 / Wednesday	Dussehra (Vijaydashami)
+8	24 Oct 2022 / Monday	Diwali / Kali Puja

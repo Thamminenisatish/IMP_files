@@ -1,0 +1,4 @@
+sh access-list
+
+debug l2 +
+

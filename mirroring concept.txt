@@ -1,0 +1,19 @@
+Port mirroring offers a method of duplicating network traffic and directing the copy towards a data store.
+
+
+Characteristics of the Monitor Session
+A monitor session is a collection of traffic mirroring configurations consisting of a single destination and, potentially, many source interfaces. For any given monitor session, the traffic from the source interfaces (called source ports) is sent to the monitoring port (called the destination port) . Some optional operations such as VLAN tag imposition and ACL filtering can be performed on the mirrored traffic streams. If there is more than one source port in a monitoring session, the traffic from the several mirrored traffic streams is combined at the destination port. The result is that the traffic that comes out of the destination port is a combination of the traffic from one or more source ports, and the traffic from each source port may or may not have VLAN push operations or ACLs applied to it.
+
+
+
+Monitor sessions have these characteristics:
+
+A single Cisco ASR 9000 Router can have a maximum of eight monitor sessions.
+
+A single monitor session can have only one destination port.
+
+A single destination port can belong to only one monitor session.
+
+A single Cisco ASR 9000 Router can have a maximum of 800 source ports.
+
+A monitor session can have a maximum of 800 source ports, as long as the maximum number of source ports from all monitoring sessions does not exceed 800

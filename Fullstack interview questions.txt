@@ -1,0 +1,16 @@
+1. map vs foreach
+2. null vs undefined
+3. Explain Event Delegation
+4. Flatten the Array
+5. var vs let vs const
+6. setTimeout Output
+7. Explain Call, Apply and Bind
+8. Infinite Currying
+9. Composition Polyfill
+10. Implement Promise.all
+ReactJs
+11. Lifecycle methods
+12. Ways to center a div
+13. CSS Box Model
+14. Implement Debounce
+ 

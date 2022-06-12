@@ -1,0 +1,2218 @@
+/********************************************************************
+* Copyright (C) 2006 Aricent Inc . All Rights Reserved
+*
+* $Id: erpscmd.def,v 1.5 2021/09/06 16:28:07 siva Exp $
+*
+* Description: This file contains CLI commands for ERPS module
+*******************************************************************/
+DEFINE GROUP : ERPS_CXT_GBL_CMDS
+
+    COMMAND : aps ring proprietaryClearFS { enable | disable }
+    ACTION  : {
+		  if ($3 != NULL)
+		  {
+			  cli_process_erps_cmd (CliHandle, 
+		                		    CLI_ERPS_PROP_CLEAR_FS_ENABLE,
+					                NULL);
+		  }
+		  else
+		  {
+			  cli_process_erps_cmd (CliHandle,
+					                CLI_ERPS_PROP_CLEAR_FS_DISABLE,
+					                NULL);
+		  }
+	  }
+    SYNTAX  : aps ring proprietaryClearFS { enable | disable }
+    PRVID   : 15
+    HELP    : Enable/Disable ERPS proprietary clear force switch functionality.
+   CXT_HELP : aps Automatic protection switching|
+              ring Ethernet protection ring|
+              proprietaryClearFS ERPS proprietary clear FS functionality|
+              enable Enables ERPS proprietary clear Force Switch|
+              disable Disables ERPS proprietary clear Force Switch|
+              <CR> Enable/Disable ERPS proprietary clear force switch functionality.
+
+    COMMAND : shutdown aps ring [switch] 
+    ACTION  : cli_process_erps_cmd (CliHandle, CLI_ERPS_SHUTDOWN, NULL, $3);
+    SYNTAX  : shutdown aps ring [switch]
+    PRVID   : 15
+    HELP    : Shuts down ERPS functionality in this virtual switch.
+              If the switch string is given then the ERPS context information
+              will also be deleted
+   CXT_HELP : shutdown Shuts down the feature|
+              aps Automatic protection switching|
+              ring Ethernet protection ring|
+              switch Virtual context or a component|
+              <CR> Shuts down ERPS functionality in virtual switch.If the switch string is given then the ERPS context information will also be deleted
+
+
+    COMMAND : no shutdown aps ring
+    ACTION  : cli_process_erps_cmd (CliHandle, CLI_ERPS_START, NULL);
+    SYNTAX  : no shutdown aps ring 
+    PRVID   : 15
+    HELP    : Starts ERPS functionality in this virtual switch
+   CXT_HELP : no Disables the configuration / deletes the entry / resets to default value|
+              shutdown Shuts down the feature|
+              aps Automatic protection switching|
+              ring Ethernet protection ring|
+              switch Virtual context or a component|
+              <CR> Starts ERPS functionality in this virtual switch
+
+    COMMAND : aps ring enable
+    ACTION  : cli_process_erps_cmd (CliHandle, CLI_ERPS_ENABLE, NULL);
+    SYNTAX  : aps ring enable
+    PRVID   : 15
+    HELP    : Enables the functionality of ERPS when ERPS is started in this virtual switch
+   CXT_HELP : aps Automatic protection switching|
+              ring Ethernet protection ring|
+              enable Enables ERPS feature on virtual switch|
+              <CR> Enables the functionality of ERPS when ERPS is started in this virtual switch.
+
+    
+    COMMAND : no aps ring enable
+    ACTION  : cli_process_erps_cmd (CliHandle, CLI_ERPS_DISABLE, NULL);
+    SYNTAX  : no aps ring enable
+    PRVID   : 15
+    HELP    : Disables the functionality of ERPS when ERPS is started in this virtual switch
+   CXT_HELP : no Disables the configuration / deletes the entry / resets to default value|
+              aps Automatic protection switching|
+              ring Ethernet protection ring|
+              enable Enables ERPS feature on virtual switch|
+              <CR> Disables the functionality of ERPS when ERPS is started in this virtual switch
+  
+    COMMAND : aps ring group <integer>
+    ACTION  : cli_process_erps_cmd (CliHandle, CLI_ERPS_GROUP_CREATE, NULL, $3);
+    SYNTAX  : aps ring group <group-id(1-4294967295)>
+    PRVID   : 15
+    HELP    : Creates a ring entry in ERPS with default values and enters into Ring Group Mode. The newly created entry will be in Not-In-Service State.
+   CXT_HELP : aps Configures automatic protection switching| 
+              ring Ethernet protection ring|
+              group Ring group|
+              (1-4294967295) Ring group ID|
+              <CR> Creates a ring entry in ERPS with default values and enters into Ring Group Mode. The newly created entry will be in Not-In-Service State.
+
+    COMMAND : no aps ring group <integer>
+    ACTION  : cli_process_erps_cmd (CliHandle, CLI_ERPS_GROUP_DELETE, NULL, $4);
+    SYNTAX  : no aps ring group <group-id(1-4294967295)>
+    PRVID   : 15
+    HELP    : Deletes a ring entry in active state from ERPS.
+   CXT_HELP : no  Disables the configuration / deletes the entry / resets to default value|
+              aps Automatic protection switching|
+              ring Ethernet protection ring|
+              group Ring group|
+              (1-4294967295) Ring group ID|
+              <CR>  Deletes a ring entry in active state from ERPS.
+
+    COMMAND : aps group name <string> ring group <integer>
+    ACTION  : cli_process_erps_cmd (CliHandle, CLI_ERPS_GROUP_NAME, NULL, $3, 
+                                    $6);
+    SYNTAX  : aps group name <group_name> ring group <group_id>
+    PRVID   : 15
+    HELP    : This command to configure ring  name for the given ring id.
+  CXT_HELP  : aps Automatic protection switching|
+              group Ring group|
+              name Ring name configuration|
+              <string> Ring group name|
+              ring Automatic protection ring|
+              group Ring group|
+              <1-4294967295> Ring group ID|
+              <CR> Configures ring  name for the given ring id
+
+    COMMAND : aps ring notification enable 
+    ACTION  : cli_process_erps_cmd (CliHandle, CLI_ERPS_NOTIFY_ENABLE, NULL);
+    SYNTAX  : aps ring notification enable
+    PRVID   : 15
+    HELP    : Enables the sending of notification messages from ERPS
+              to a remote management entity upon specific events
+   CXT_HELP : aps Automatic protection switching|
+              ring Ethernet protection ring|
+              notification Normal but significant messages|
+              enable Enables sending of ERPS notification messages|
+              <CR> Enables the sending of notification messages from ERPS to a remote management entity upon specific events.
+
+    COMMAND : no aps ring notification enable
+    ACTION  : cli_process_erps_cmd (CliHandle, CLI_ERPS_NOTIFY_DISABLE, NULL);
+    SYNTAX  : no aps ring notification enable
+    PRVID   : 15
+    HELP    : Disables the sending of notification messages from ERPS
+              to a remote management entity upon specific events
+   CXT_HELP : no Disables the configuration / deletes the entry / resets to default value|
+              aps Automatic protection switching|
+              ring Ethernet protection ring|
+              notification Normal but significant messages|
+              enable Enables sending of ERPS notification messages|
+              <CR> Disables the sending of notification messages from ERPS.
+
+    COMMAND : clear aps ring statistics  [ring group <integer>] 
+    ACTION  : {
+                  cli_process_erps_cmd (CliHandle, CLI_ERPS_CLEAR_STATS_ALL,
+                                        NULL, $6);
+              }
+    SYNTAX  : clear aps ring statistics  [ring group <group-id>]
+    PRVID   : 15
+    HELP    : Clears the statistic counters for the given ring. If ring id is
+              not given, then clears the statistics for all rings in this
+              context.
+   CXT_HELP : clear Performs clear operation|
+              aps Automatic protection switching|
+              ring Ethernet protection ring|
+              statistics Statistics related information|
+              ring Ethernet protection ring|
+              group Ring group|
+              <1-4294967295> Ring group ID|
+              <CR> Clears the statistic counters for the given ring. If ring id is not given, then clears the statistics for all rings in this context
+
+   COMMAND  : aps ring map vlan-group <short(0-64)> [{add | remove}] <port_list>
+   ACTION   : {
+              if($5 != NULL)
+	          {
+                  cli_process_erps_cmd(CliHandle, CLI_ERPS_ADD_VLAN_LIST,NULL,
+                                       $4,$7);
+	          }
+              if($6 != NULL)
+	          {
+                  cli_process_erps_cmd(CliHandle, CLI_ERPS_REM_VLAN_LIST,NULL,
+                                       $4,$7);
+	          }
+              if(($5 == NULL) && ($6 == NULL))
+              {
+                  cli_process_erps_cmd(CliHandle, CLI_ERPS_OVERWRITE_VLAN_LIST,NULL,
+                                       $4,$7);
+              }
+              }
+   SYNTAX   : aps ring map vlan-group <short(0-64)> [{add | remove}] <vlan_list>
+   PRVID    : 15
+   HELP     : Allows the user to add or remove a set of VLANs to a VLAN group. 
+              If add/remove option is not given, then the given list will 
+              overwrite the existing vlan list for the group.
+   CXT_HELP : aps Automatic protection switching | 
+		  ring Ethernet protection ring | 
+		  map Grouping of VLANs | 
+		  vlan-group VLAN group |
+		  (0-64) VLAN group ID | 
+		  add Adds one or set of VLANs to the VLAN group | 
+		  remove Removes one or set of VLANs from the VLAN group | 
+		  <vlan_list> List of VLANs to be added to or removed from the VLAN group | 
+		  <CR> Allows the user to add or remove a set of VLANs to a VLAN group. If add/remove option is not given, then the given list will overwrite the existing VLAN list for the group.
+
+   COMMAND  : no aps ring vlan-group <short(0-64)>
+   ACTION   : {
+                cli_process_erps_cmd(CliHandle, CLI_ERPS_REM_VLAN_GROUP, NULL,
+                                                              $4);
+              }
+   SYNTAX   : no aps ring vlan-group <short(0-64)>
+   PRVID    : 15
+   HELP     : Deletes the entire VLAN grouping information that belongs 
+              to a particular VLAN group.
+   CXT_HELP : no Disables the configuration / deletes the entry / resets to default value | 
+		  aps Automatic protection switching | 
+		  ring Ethernet protection ring | 
+		  vlan-group VLAN group | 
+		  (0-64) VLAN group ID |
+		  <CR> Deletes the entire VLAN grouping information that belongs to a particular VLAN group.
+
+   COMMAND  : aps ring vlan-group-manager {erps | mstp}
+   ACTION:
+           {
+             UINT4 u4Manager=0;
+             if($3 !=NULL)
+             {
+               u4Manager = ERPS_VLAN_GROUP_MANAGER_ERPS;
+             }
+             if($4 != NULL)
+             {
+               u4Manager = ERPS_VLAN_GROUP_MANAGER_MSTP;
+             }
+             cli_process_erps_cmd(CliHandle, CLI_ERPS_SET_GROUP_MANAGER,NULL,u4Manager);
+           }
+   SYNTAX : aps ring vlan-group-manager {erps | mstp}
+   PRVID    : 15
+   HELP   : Configures the module that manages the grouping of VLANs in the 
+            context.
+   CXT_HELP : aps Automatic protection switching | 
+	        ring Ethernet protection ring | 
+		  vlan-group-manager Identifies the module that manages the grouping of VLANs | 
+		  erps ERPS module manages the grouping of VLANs. ERPS VLAN group ID identifies the group. | 
+		  mstp MSTP module manages the grouping of VLANS. MSTP instance ID identifies the group. | 
+		  <CR> Configures the module that manages the grouping of VLANs in the context
+
+END GROUP
+
+DEFINE GROUP : ERPS_DEBUG_CMDS
+    COMMAND : debug aps ring {[all] [critical] [start-shut] [mgmt] [ctrl] [pkt-dump] [resource] [all-fail] [buff] [switch <string (32)>]}[{ <short (0-7)> | alerts | critical | debugging | emergencies | errors | informational | notification | warnings }]
+    ACTION  : 
+            { 
+                UINT1 au1TraceInput[ERPS_TRC_MAX_SIZE];
+                UINT4 u4Value = DEBUG_DEF_LVL_FLAG;
+
+                MEMSET (au1TraceInput, 0, sizeof (au1TraceInput));
+                
+                STRNCPY (au1TraceInput, "enable", STRLEN ("enable"));
+
+                    if($3 != NULL)
+                    {
+                        STRNCAT (au1TraceInput, " all", STRLEN (" all"));
+                    }
+                    if($4 != NULL)
+                    {
+                        STRNCAT (au1TraceInput, " critical", STRLEN (" critical"));
+                    }
+                    if($5 != NULL)
+                    {
+                        STRNCAT (au1TraceInput, " start-shut", STRLEN (" start-shut"));
+                    }
+                    if($6 != NULL)
+                    {
+                        STRNCAT (au1TraceInput, " mgmt", STRLEN (" mgmt"));
+                    }
+                    if($7 != NULL)
+                    {
+                        STRNCAT (au1TraceInput, " ctrl", STRLEN (" ctrl"));
+                    }
+                    if($8 != NULL)
+                    {
+                        STRNCAT (au1TraceInput, " pkt-dump", STRLEN (" pkt-dump"));
+                    }
+                    if($9 != NULL)
+                    {
+                        STRNCAT (au1TraceInput, " resource", STRLEN (" resource"));
+                    }
+                    if($10 != NULL)
+                    {
+                        STRNCAT (au1TraceInput, " all-fail", STRLEN (" all-fail"));
+                    }
+                    if($11 != NULL)
+                    {
+                        STRNCAT (au1TraceInput, " buf", STRLEN (" buf"));
+                    }
+                  if ($14 != NULL)
+                  {
+                     u4Value = *(UINT4 *) $14;
+                  }
+                  else if ($15 != NULL)
+                  {
+                      u4Value = DEBUG_ALERT_LEVEL;
+                  }
+                  else if ($16 != NULL)
+                  {
+                      u4Value = DEBUG_CRITICAL_LEVEL;
+                  }
+                  else if ($17!= NULL)
+                  {
+                      u4Value = DEBUG_DEBUG_LEVEL;
+                  }
+                  else if ($18 != NULL)
+                  {
+                      u4Value = DEBUG_EMERG_LEVEL;
+                   }
+                   else if ($19 != NULL)
+                   {
+                       u4Value = DEBUG_ERROR_LEVEL;
+                   }
+                   else if ($20 != NULL)
+                   {
+                       u4Value = DEBUG_INFO_LEVEL;
+                   }
+                   else if ($21 != NULL)
+                   {
+                       u4Value = DEBUG_NOTICE_LEVEL;
+                   }
+                   else if ($22 != NULL)
+                   {
+                       u4Value = DEBUG_WARN_LEVEL;
+                   }
+ 
+                    if (!STRNCMP (au1TraceInput, "enable", 
+                        STRLEN (au1TraceInput)))
+                    {
+                        cli_process_erps_sh_cmd (CliHandle, 
+                        CLI_ERPS_SHOW_DEBUG, NULL, NULL);
+                    }
+                    else
+                    {
+                        cli_process_erps_cmd (CliHandle, CLI_ERPS_DEBUG,
+                                              NULL, $13, au1TraceInput, u4Value);
+                    }
+                
+            }
+    SYNTAX  :debug aps ring {[all] [critical] [start-shut] [mgmt] [ctrl] [pkt-dump] [resource] [all-fail] [buff] [switch <string (32)>]}[{ <short (0-7)> | alerts | critical | debugging | emergencies | errors | informational | notification | warnings }]
+    PRVID   : 15
+    HELP    : Sets the debug level
+  CXT_HELP  : debug Configures trace for the protocol|
+              aps Automatic protection switching|
+              ring Ethernet protection ring|
+              all All trace messages|
+              critical Critical traces|
+              start-shut Start and shut down traces|
+              mgmt Management traces|
+              ctrl Control Plane traces|
+              pkt-dump Packet dump traces|
+              resource Traces related to all resources such as memory, data structure and the like|
+              all-fail All failure traces|
+              buff Buffer allocation/release traces|
+              switch Switch related configuration|
+              <string(32)> Context name|
+              (0-7) Severity level value |
+              alerts Immediate action needed |
+              critical Critical conditions |
+              debugging Debugging messages |
+              emergencies System is unusable |
+              errors Error conditions |
+              informational Information messages |
+              notification Normal but significant messages |
+              warnings Warning conditions | 
+              <CR>  Sets the debug level.
+
+
+    COMMAND : no debug aps ring {[all] [critical] [start-shut] [mgmt] [ctrl] [pkt-dump] [resource] [all-fail] [buff] [switch <string (32)>]}
+    ACTION  : 
+{ 
+	UINT1 au1TraceInput[ERPS_TRC_MAX_SIZE];
+
+	MEMSET (au1TraceInput, 0, sizeof (au1TraceInput));
+
+	STRNCPY (au1TraceInput, "disable", STRLEN ("disable"));
+
+	if($4 != NULL)
+	{
+		STRNCAT (au1TraceInput, " all", STRLEN (" all"));
+	}
+	if($5 != NULL)
+	{
+		STRNCAT (au1TraceInput, " critical", STRLEN (" critical"));
+	}
+	if($6 != NULL)
+	{
+		STRNCAT (au1TraceInput, " start-shut", STRLEN (" start-shut"));
+	}
+	if($7 != NULL)
+	{
+		STRNCAT (au1TraceInput, " mgmt", STRLEN (" mgmt"));
+	}
+	if($8 != NULL)
+	{
+		STRNCAT (au1TraceInput, " ctrl", STRLEN (" ctrl"));
+	}
+	if($9 != NULL)
+	{
+		STRNCAT (au1TraceInput, " pkt-dump", STRLEN (" pkt-dump"));
+	}
+	if($10 != NULL)
+	{
+		STRNCAT (au1TraceInput, " resource", STRLEN (" resource"));
+	}
+	if($11 != NULL)
+	{
+		STRNCAT (au1TraceInput, " all-fail", STRLEN (" all-fail"));
+	}
+	if($12 != NULL)
+	{
+		STRNCAT (au1TraceInput, " buf", STRLEN (" buf"));
+	}
+	if (!STRNCMP (au1TraceInput, "disable", 
+				STRLEN (au1TraceInput)))
+	{
+		cli_process_erps_sh_cmd (CliHandle, 
+				CLI_ERPS_SHOW_DEBUG, 
+				NULL, NULL);
+	}
+	else
+	{
+		cli_process_erps_cmd (CliHandle, CLI_ERPS_NO_DEBUG,
+				NULL,$14, au1TraceInput);
+	}
+
+}
+    SYNTAX  : no debug aps ring {[all] [critical] [start-shut] [mgmt] [ctrl] [pkt-dump] [resource] [all-fail] [buff] [switch <string (32)>]}
+
+    PRVID   : 15
+    HELP    : Resets the debug level
+  CXT_HELP  : no Disables the configuration / deletes the entry / resets to default value|
+              debug Configures trace for the protocol|
+              aps Automatic protection switching|
+              ring Ethernet protection ring|
+              all All trace messages|
+              critical Port priority is set as critical|
+              start-shut Start and shut down traces|
+              mgmt Management traces|
+              ctrl Control Plane traces|
+              pkt-dump Packet dump traces|
+              resource Traces related to all resources such as memory, data structure and the like|
+              all-fail All failure traces|
+              buff Buffer allocation/release traces|
+              switch Switch related configuration|
+              <string(32)> Context name|
+              <CR>  Resets the debug level.
+
+
+
+END GROUP
+
+DEFINE GROUP : ERPS_RING_PG_CMDS
+
+    COMMAND : aps group name <string>
+    ACTION  : cli_process_erps_cmd (CliHandle, CLI_ERPS_RING_GROUP_NAME, 
+                                    NULL, $3);
+    SYNTAX  : aps group name <string>
+    PRVID   : 15
+    HELP    : Configures ring name for this ring.
+   CXT_HELP : aps Automatic protection switching|
+              group Ring group|
+              name Ring name configuration|
+              <string> Ring group name|
+              <CR> Configures ring name.
+
+    COMMAND : no aps group name
+    ACTION  : cli_process_erps_cmd (CliHandle, CLI_ERPS_RING_GROUP_NAME,
+                                    NULL, NULL); 
+    SYNTAX  : no aps group name
+    PRVID   : 15
+    HELP    : Unconfigures ring name and set the ring name to default ring name.
+   CXT_HELP : no Unconfigures ring name for the given ring id|
+              aps Automatic protection switching|
+              group Ring group|
+              name Ring name configuration|
+              <CR> Unconfigures ring name.
+
+    COMMAND : aps group active
+    ACTION  : cli_process_erps_cmd (CliHandle, CLI_ERPS_RING_GROUP_ACTIVATE, 
+                                    NULL);
+    SYNTAX  : aps group active
+    PRVID   : 15
+    HELP    : This command should will succeed only when vlan, ports and meps 
+              are configured for this ring. 
+   CXT_HELP : aps Automatic protection switching|
+              group Ring group|
+              active Activates the ring|
+              <CR> This command will succeed only when vlan, ports and meps are configured for this ring.
+              
+    COMMAND : no aps group active
+    ACTION  : cli_process_erps_cmd (CliHandle, CLI_ERPS_RING_GROUP_DEACTIVATE, 
+                                    NULL);
+    SYNTAX  : no aps group active
+    PRVID   : 15
+    HELP    : De-Activates the given ring group.
+   CXT_HELP : no Disables the configuration / deletes the entry / resets to default value|
+              aps Automatic protection switching|
+              group Ring group|
+              active Activates the ring|
+              <CR> This command will succeed only when vlan, ports and meps are configured for this ring.
+
+    COMMAND : aps service {vlan | mpls-lsp | mpls-pw | mpls-lsp-pw}
+    ACTION  : {
+
+                  UINT1 u1ServiceType = 0;
+                  if ($2 != NULL)
+                  {
+                      u1ServiceType = ERPS_SERVICE_VLAN;
+                  }
+                  if ($3 != NULL)
+                  {
+                      u1ServiceType = ERPS_SERVICE_MPLS_LSP;
+                  }
+                  if ($4 != NULL)
+                  {
+                      u1ServiceType = ERPS_SERVICE_MPLS_PW;
+                  }
+                  if ($5 != NULL)
+                  {
+                      u1ServiceType = ERPS_SERVICE_MPLS_LSP_PW;
+                  }
+                  cli_process_erps_cmd (CliHandle, 
+                                        CLI_ERPS_RING_GROUP_SERVICE_TYPE,
+                                        NULL, u1ServiceType);
+             } 
+    SYNTAX  : aps service [vlan | mpls-lsp | mpls-pw | mpls-lsp-pw] 
+    PRVID   : 15
+    HELP    : This command configures the service type of this ring group. 
+    CXT_HELP :  aps Automatic protection switching|
+                service Configures the service|
+		vlan Configures the service as vlan|
+                mpls-lsp Configures the service as mpls-lsp|
+		mpls-pw Configures the service as mpls-pw|
+		mpls-lsp-pw Configures the service as mpls-lsp-pw|
+		<CR> This command configures the service of the ring  
+
+    COMMAND : aps working <ifXtype> <ifsnum> [<ifXtype> <ifsnum>] vlan <vsi_id> [inner-vlan <vsi_id>]
+    ACTION  : {
+                  UINT4 u4IfIndex1 = 0;
+                  UINT4 u4IfIndex2 = 0;
+#ifdef VSI_WANTED
+		          INT4		i4SlotNum = 0;
+        		  INT4		i4PortNum = 0;
+        		  INT4		i4SVlan = 0;
+        		  INT4		i4CVlan = 0;
+        		  INT2		i2EncapType = 0;
+        		  UINT1		u1Token[CFA_MAX_PORT_NAME_LENGTH];
+
+        		  MEMCPY (u1Token, $3, CFA_MAX_PORT_NAME_LENGTH * sizeof (UINT1));
+
+        		  CfaGetVepInfoFromIfname (u1Token, &i4SlotNum, &i4PortNum, &i4SVlan, &i4CVlan, 
+                                                   &i2EncapType);
+
+                  if ((i2EncapType == DEFAULT_DOT1Q_VEP) || (i2EncapType == PRIORITY_DOT1Q_VEP) ||
+                          (i2EncapType == DOT1Q_VEP) || (i2EncapType == VLAN_RANGE_DOT1Q_VEP) ||
+                          (i2EncapType == Q1Q2_VEP) || (i2EncapType == QALL_VEP) ||
+                          (i2EncapType == DEFAULT_QINQ_VEP) || (i2EncapType == PRIORITY_QINQ_VEP))
+        		  {
+        		      if (VsiApiCfaCliGetIfList ($2, $3, (INT4 *) &u4IfIndex1) == CLI_FAILURE)
+        		      {
+        			  CliPrintf (CliHandle, "\r%% Invalid VEP1 Interface\r\n");
+        			  return CLI_FAILURE;
+        		      }
+        		      if ($4 != NULL)
+        		      {
+        			  if (VsiApiCfaCliGetIfList ($4, $5, (INT4 *) &u4IfIndex2) == CLI_FAILURE)
+        			  {
+        			      CliPrintf (CliHandle, "\r%% Invalid VEP2 Interface\r\n");
+        			      return CLI_FAILURE;
+        			  }
+        		      }
+        		  }
+        		  else
+                  {
+#endif
+                  if (CfaCliGetIfIndex ($2, $3, &u4IfIndex1) == CLI_FAILURE)
+                  {
+                      CliPrintf (CliHandle, "\r%% Invalid Interface \r\n");
+                      return CLI_FAILURE;
+                  }
+
+                  if ($4 != NULL)
+                  {
+                      if (CfaCliGetIfIndex ($4, $5, &u4IfIndex2) == CLI_FAILURE)
+                      {
+                          CliPrintf (CliHandle, "\r%% Invalid Interface \r\n");
+                          return CLI_FAILURE;
+                      }
+                  }
+#ifdef VSI_WANTED
+                  }
+#endif
+                  cli_process_erps_cmd (CliHandle, 
+                                        CLI_ERPS_RING_GROUP_WRKG_PORTS,
+                                        NULL, u4IfIndex1, u4IfIndex2,$7,$9);
+
+              }
+    SYNTAX  : aps working <interface_type> <interface_id> [<interface_type> <interface_id>] vlan <vsi_id> [inner-vlan<vsi_id>]
+    PRVID   : 15
+    HELP    : This command configures the ring ports and R-APS Vlan Id for the
+              ring.
+  CXT_HELP  : aps  Automatic protection switching|
+              working Working entity related configuration|
+              DYNiftype|
+              DYNifsnum|
+              DYNiftype|
+              DYNifsnum|
+              vlan VLAN related configuration|
+	      vsi_id The range (4100-65535) is for VSI ID|
+	      inner VLAN realted configuration|
+	      vsi_id The range (4100-65535) is for VSI ID|
+              <CR> This command configures the ring ports and R-APS Vlan Id for the ring.
+
+#ifdef VSI_WANTED
+    COMMAND : aps map working-data-vep <ifXtype> <ifsnum> [<ifXtype> <ifsnum>] vsi <vsi_id> 
+    ACTION  : {
+		INT4		i4DataVep1Index = 0;
+		INT4		i4DataVep2Index = 0;
+
+		if (VsiApiCfaCliGetIfList ($3, $4, &i4DataVep1Index) == CLI_FAILURE)
+                  {
+		    CliPrintf (CliHandle, "\r%% Invalid VEP1 Interface\r\n");
+                      return CLI_FAILURE;
+                  }
+                if ($5 != NULL)
+                {
+		if (VsiApiCfaCliGetIfList ($5, $6, &i4DataVep2Index) == CLI_FAILURE)
+                      {
+		    CliPrintf (CliHandle, "\r%% Invalid VEP2 Interface\r\n");
+                          return CLI_FAILURE;
+                      }
+                }
+
+                cli_process_erps_cmd (CliHandle, CLI_ERPS_RING_GROUP_WRKG_DATA_VEP,
+					NULL, i4DataVep1Index, i4DataVep2Index, $8);
+              }
+    SYNTAX  : aps map working-data-vep <interface_type> <interface_id> [<interface_type> <interface_id>] vsi <vsi_id>
+    PRVID   : 15
+    HELP    : This command configures the data vep for the ring.
+  CXT_HELP  : aps  Automatic protection switching|
+              map Map the vep to the ring |
+              working-data-vep Working entity related configuration|
+              DYNiftype|
+              DYNifsnum|
+              DYNiftype|
+              DYNifsnum|
+              vsi VSI Configuration. The range can be (1-32000)|
+              vsi_id The range (4100-65535) is for VSI ID
+              <CR> This command configures the data vep for the ring
+
+    COMMAND : no aps map working-data-vep <iftype> <ifsnum> [<iftype> <ifsnum>] vsi <vsi_id>
+    ACTION  : {
+                INT4            i4DataVep1Index = 0;
+                INT4            i4DataVep2Index = 0;
+        
+                if (VsiApiCfaCliGetIfList ($4, $5, &i4DataVep1Index) == CLI_FAILURE)
+                {
+                    CliPrintf (CliHandle, "\r%% Invalid VEP1 Interface\r\n");
+                    return CLI_FAILURE;
+                }
+                if ($6 != NULL)
+                {
+                    if (VsiApiCfaCliGetIfList ($6, $7, &i4DataVep2Index) == CLI_FAILURE)
+                    {
+                        CliPrintf (CliHandle, "\r%% Invalid VEP2 Interface\r\n");
+                        return CLI_FAILURE;
+                    }
+                }
+        
+                cli_process_erps_cmd (CliHandle, CLI_ERPS_RING_GROUP_DEL_WRKG_DATA_VEP,
+                        NULL, i4DataVep1Index, i4DataVep2Index, $9);
+              }
+    SYNTAX  : no aps map working-data-vep <interface_type> <interface_id> [<interface_type> <interface_id>] vsi <vsi-id>
+    PRVID   : 15
+    HELP    : This command deletes the vep from the list of data-vep of the ring.
+    CXT_HELP: no Disables the configuration / deletes the entry / resets to default value |
+	      aps Automatic Protection Switching |
+	      map Map the vep to the ring |
+	      working-data-vep Working entity related configuration |
+	      DYNiftype |
+	      DYNifsnum |
+	      DYNiftype |
+	      DYNifsnum |
+	      vsi VSI Configuration. The range can be (1-32000)|
+          vsi_id The range (4100-65535) is for VSI ID
+	      <CR> This command deletes the vep from the data-vep list of the ring
+#endif
+
+    COMMAND : aps protect <ifXtype> <ifsnum> 
+    ACTION  : {
+                  UINT4 u4IfIndex = 0;
+#ifdef VSI_WANTED
+                  UINT1     u1Token[CFA_MAX_PORT_NAME_LENGTH];
+                  INT4      i4SlotNum = 0;
+                  INT4      i4PortNum = 0;
+                  INT4      i4SVlan = 0;
+                  INT4      i4CVlan = 0;
+                  INT2      i2EncapType = 0;
+
+                  MEMCPY (u1Token, $3, CFA_MAX_PORT_NAME_LENGTH * sizeof (UINT1));
+
+                  CfaGetVepInfoFromIfname (u1Token, &i4SlotNum, &i4PortNum, &i4SVlan, &i4CVlan, 
+                                           &i2EncapType);
+
+                  if ((i2EncapType == DEFAULT_DOT1Q_VEP) || (i2EncapType == PRIORITY_DOT1Q_VEP) ||
+                          (i2EncapType == DOT1Q_VEP) || (i2EncapType == VLAN_RANGE_DOT1Q_VEP) ||
+                          (i2EncapType == Q1Q2_VEP) || (i2EncapType == QALL_VEP) ||
+                          (i2EncapType == DEFAULT_QINQ_VEP) || (i2EncapType == PRIORITY_QINQ_VEP))
+                  {
+                      if (VsiApiCfaCliGetIfList ($2, $3, (INT4 *) &u4IfIndex) == CLI_FAILURE)
+                      {
+                          CliPrintf (CliHandle, "\r%% Invalid VEP1 Interface\r\n");
+                          return CLI_FAILURE;
+                      }
+                  }
+                  else
+                  {
+#endif
+                  if (CfaCliGetIfIndex ($2, $3, &u4IfIndex) == CLI_FAILURE)
+                  {
+                      CliPrintf (CliHandle, "\r%% Invalid Interface \r\n");
+                      return CLI_FAILURE;
+                  }
+#ifdef VSI_WANTED
+                  }
+#endif
+
+                  cli_process_erps_cmd (CliHandle, 
+                                        CLI_ERPS_RING_GROUP_PROTECT_PORTS,
+                                        NULL, u4IfIndex);
+              }
+    SYNTAX  : aps protect <interface_type> <interface_id>
+    PRVID   : 15
+    HELP    : This command configures the given port as RPL port for the 
+              ring group and by this the ring node becomes the RPL owner. 
+              This port should be one of the ring ports.
+   CXT_HELP : aps Automatic protection switching|
+              protect RPL configuration|
+              DYNiftype|
+              DYNifsnum|
+             <CR> This command configures the given port as RPL port for the ring group and by this the ring node becomes the RPL owner.This port should be one of the ring ports.
+
+
+    COMMAND : no aps protect 
+    ACTION  : {
+                  cli_process_erps_cmd (CliHandle, 
+                                        CLI_ERPS_RING_GROUP_UNPROTECT_PORTS,
+                                        NULL);
+
+              }
+    SYNTAX  : no aps protect 
+    PRVID   : 15
+    HELP    : This command configures the given port as non-RPL port from the 
+              ring. If the given port is earlier configured as RPL port, then
+              the node becomes non-RPL owner for this ring.
+   CXT_HELP : no Disables the configuration / deletes the entry / resets to default value|
+              aps Automatic protection switching|
+              protect RPL configuration|
+              <CR> This command configures the given port as non-RPL port from the ring. If the given port is earlier configured as RPL port, then the node becomes non-RPL owner for this ring.
+
+
+    COMMAND: aps ring path <ifXtype> <ifsnum> {enable | disable}
+     ACTION  : {
+                  UINT4 u4IfIndex = 0;
+#ifdef VSI_WANTED
+                  UINT1     u1Token[CFA_MAX_PORT_NAME_LENGTH];
+                  INT4      i4SlotNum = 0;
+                  INT4      i4PortNum = 0;
+                  INT4      i4SVlan = 0;
+                  INT4      i4CVlan = 0;
+                  INT2      i2EncapType = 0;
+
+                  MEMCPY (u1Token, $4, CFA_MAX_PORT_NAME_LENGTH * sizeof (UINT1));
+
+                  CfaGetVepInfoFromIfname (u1Token, &i4SlotNum, &i4PortNum, &i4SVlan, &i4CVlan,
+                                           &i2EncapType);
+
+                  if ((i2EncapType == DEFAULT_DOT1Q_VEP) || (i2EncapType == PRIORITY_DOT1Q_VEP) ||
+                          (i2EncapType == DOT1Q_VEP) || (i2EncapType == VLAN_RANGE_DOT1Q_VEP) ||
+                          (i2EncapType == Q1Q2_VEP) || (i2EncapType == QALL_VEP) ||
+                          (i2EncapType == DEFAULT_QINQ_VEP) || (i2EncapType == PRIORITY_QINQ_VEP))
+                  {
+                      if (VsiApiCfaCliGetIfList ($3, $4, (INT4 *) &u4IfIndex) == CLI_FAILURE)
+                      {
+                          CliPrintf (CliHandle, "\r%% Invalid VEP1 Interface\r\n");
+                          return CLI_FAILURE;
+                      }
+                  }
+                  else
+                  {
+#endif
+                  if (CfaCliGetIfIndex ($3, $4, &u4IfIndex) == CLI_FAILURE)
+                 {
+                     CliPrintf (CliHandle, "\r%% Invalid Interface \r\n");
+                     return CLI_FAILURE;
+                 }
+#ifdef VSI_WANTED
+                 }
+#endif
+                 if($5 != NULL)
+                 {
+                     cli_process_erps_cmd (CliHandle,
+                             CLI_ERPS_RING_GROUP_PORT_ENABLE,
+                             NULL, u4IfIndex, OSIX_ENABLED);
+                 }
+                 if($6 != NULL)
+                 {
+                     cli_process_erps_cmd (CliHandle,
+                             CLI_ERPS_RING_GROUP_PORT_DISABLE,
+                             NULL, u4IfIndex, OSIX_DISABLED);
+                 }
+              }
+    SYNTAX  : aps ring path <interface_type> <interface_id>{enable | disable}
+    PRVID   : 15
+    HELP    : This command configures the given port as enable or disable.
+              This port should be one of the ring ports.
+   CXT_HELP : aps Automatic protection switching|
+              ring Ethernet protection ring|
+              path path configuration|
+              DYNiftype|
+              DYNifsnum|
+              enable enable the port|
+              disable Disable the port.
+
+    COMMAND: aps working [add] subportlist  <ifXtype> <iface_list> subportlist  <ifXtype> <iface_list>
+
+    ACTION : {
+                  UINT1 u1ConfigType = 0;
+
+                  if ($2 != NULL)
+                  {
+                     u1ConfigType = ERPS_CLI_SUBPORTLIST_ADD;
+                  }
+
+                  cli_process_erps_cmd (CliHandle, CLI_ERPS_RING_GROUP_WRKG_SUBPORTS, 
+                                         NULL, u1ConfigType, $4, $5, $7, $8);
+             }
+    SYNTAX  : aps working [add] subportlist  <interfaceType> <iface_list> subportlist  <interfaceType> <iface_list> 
+    PRVID   : 15
+    HELP    : This command configures the SubPortLists  to which 
+              the R-APS service is extended in this ring group.
+    CXT_HELP : aps Automatic protection switching|
+	       working Working entity related configuration|
+               add Adds a port to the subportlist| 
+	       subportlist Configures the subportlist for the left ring port|
+              DYNiftype|
+           <iface_list>  Interface list (<0>/<1-64>,1-65535)|    
+               subportlist Configures the subportlist for the right ring port|
+              DYNiftype|
+           <iface_list>  Interface list (<0>/<1-64>,1-65535)|    
+               <CR> This command configures the subport list.
+		
+	    			 
+
+
+    COMMAND: no aps working subportlist
+    ACTION : {
+                  cli_process_erps_cmd (CliHandle, CLI_ERPS_RING_GROUP_DEL_WRKG_SUBPORTS,
+                                         NULL);
+             }
+    SYNTAX  : no aps working subportlist 
+    PRVID   : 15
+    HELP    : This command deletes the sub-PortList to which
+              the R-APS service is extended in this ring group.
+    CXT_HELP: no Disables the configuration / deletes the entry / resets to default value|
+              aps Automatic protection switching|
+	      working Working entity related configuration|
+              subportlist Configures the subportlist|
+	      <CR> This command resets the subport list.	 	
+	 
+
+    COMMAND : aps neighbor <ifXtype> <ifsnum> 
+    ACTION  : {
+                  UINT4 u4IfIndex = 0;
+#ifdef VSI_WANTED
+                  UINT1     u1Token[CFA_MAX_PORT_NAME_LENGTH];
+                  INT4      i4SlotNum = 0;
+                  INT4      i4PortNum = 0;
+                  INT4      i4SVlan = 0;
+                  INT4      i4CVlan = 0;
+                  INT2      i2EncapType = 0;
+
+                  MEMCPY (u1Token, $3, CFA_MAX_PORT_NAME_LENGTH * sizeof (UINT1));
+
+                  CfaGetVepInfoFromIfname (u1Token, &i4SlotNum, &i4PortNum, &i4SVlan, &i4CVlan,
+                                           &i2EncapType);
+
+                  if ((i2EncapType == DEFAULT_DOT1Q_VEP) || (i2EncapType == PRIORITY_DOT1Q_VEP) ||
+                          (i2EncapType == DOT1Q_VEP) || (i2EncapType == VLAN_RANGE_DOT1Q_VEP) ||
+                          (i2EncapType == Q1Q2_VEP) || (i2EncapType == QALL_VEP) ||
+                          (i2EncapType == DEFAULT_QINQ_VEP) || (i2EncapType == PRIORITY_QINQ_VEP))
+                  {
+                      if (VsiApiCfaCliGetIfList ($2, $3, (INT4 *) &u4IfIndex) == CLI_FAILURE)
+                      {
+                          CliPrintf (CliHandle, "\r%% Invalid VEP1 Interface\r\n");
+                          return CLI_FAILURE;
+                      }
+                  }
+                  else
+                  {
+#endif
+                  if (CfaCliGetIfIndex ($2, $3, &u4IfIndex) == CLI_FAILURE)
+                  {
+                      CliPrintf (CliHandle, "\r%% Invalid Interface \r\n");
+                      return CLI_FAILURE;
+                  }
+
+#ifdef VSI_WANTED
+		  }
+#endif
+                  cli_process_erps_cmd (CliHandle, 
+                                        CLI_ERPS_RING_RPL_NEIGHBOUR,
+                                        NULL, u4IfIndex);
+              }
+    SYNTAX  : aps neighbor <interface_type> <interface_id>
+    PRVID   : 15
+    HELP    : This command configures the given port as RPL Neighbour port for the 
+              ring group and by this the ring node becomes the RPL Neighbour. 
+              This port should be one of the ring ports and adjacent to the RPL.
+   CXT_HELP : aps Automatic protection switching|
+              neighbor  RPL Neighbour  configuration|
+              DYNiftype|
+              DYNifsnum|
+              <CR> This command configures the given port as RPL Neighbour port for the ring group and by this the ring node becomes the RPL Neighbour.This port should be one of the ring ports and adjacent to the RPL owner.
+
+
+    COMMAND : no aps neighbor 
+    ACTION  : {
+                  cli_process_erps_cmd (CliHandle, 
+                                        CLI_ERPS_RING_NO_RPL_NEIGHBOUR,
+                                        NULL);
+
+              }
+    SYNTAX  : no aps neighbor 
+    PRVID   : 15
+    HELP    : This command is used to  remove the  RPL neighbor configuration from 
+              the ring. 
+   CXT_HELP : no Disables the configuration / deletes the entry / resets to default value|
+              aps Automatic protection switching|
+              neighbor  RPL neighbor configuration|
+              <CR> This command is used to remove the RPL neighbor configuration on the ring. 
+
+    COMMAND : aps next-neighbor <ifXtype> <ifsnum> 
+    ACTION  : {
+                  UINT4 u4IfIndex = 0;
+
+                  if (CfaCliGetIfIndex ($2, $3, &u4IfIndex) == CLI_FAILURE)
+                  {
+                      CliPrintf (CliHandle, "\r%% Invalid Interface \r\n");
+                      return CLI_FAILURE;
+                  }
+
+                  cli_process_erps_cmd (CliHandle, 
+                                        CLI_ERPS_RING_RPL_NEXT_NEIGHBOUR,
+                                        NULL, u4IfIndex);
+              }
+    SYNTAX  : aps next-neighbor <interface_type> <interface_id>
+    PRVID   : 15
+    HELP    : This command configures the given port as RPL Next Neighbour port
+              for the ring group and by this the ring node becomes the RPL Next
+              Neighbour. 
+              This port should be one of the ring ports and adjacent to the RPL.
+   CXT_HELP : aps Automatic protection switching|
+              next-neighbor  RPL Next Neighbour configuration|
+              DYNiftype|
+              DYNifsnum|
+              <CR> This command configures the given port as RPL Next Neighbour port for the ring group and by this the ring node becomes the RPL Next Neighbour.This port should be one of the ring ports and adjacent to the RPL owner or RPL Neighbour node.
+
+
+    COMMAND : no aps next-neighbor 
+    ACTION  : {
+                  cli_process_erps_cmd (CliHandle, 
+                                        CLI_ERPS_RING_NO_RPL_NEXT_NEIGHBOUR,
+                                        NULL);
+
+              }
+    SYNTAX  : no aps next-neighbor 
+    PRVID   : 15
+    HELP    : This command is used to  remove the  RPL next neighbor configuration from 
+              the ring. 
+   CXT_HELP : no Disables the configuration / deletes the entry / resets to default value|
+              aps Automatic protection switching|
+              next-neighbor  RPL next neighbor configuration|
+              <CR> This command is used to remove the RPL next neighbor configuration on the ring. 
+
+
+    COMMAND : aps blockport-on-virtualchannel-recovery
+    ACTION  : {
+                  cli_process_erps_cmd (CliHandle, 
+                                        CLI_ERPS_RING_VC_BLOCK,
+                                        NULL);
+              }
+    SYNTAX  : aps blockport-on-virtualchannel-recovery
+    PRVID   : 15
+    HELP    : This command allows blocking of subring port to avoid 
+              temporary loop in the sub-ring, when virtual channel of subring
+              recovers. This should be configured only on one of the 
+              interconnected nodes of a sub-ring.
+   CXT_HELP : aps Automatic protection switching|
+              blockport-on-virtualchannel-recovery  blocks sub-ring port during recovery of virtual channel of sub
+              ring|
+              <CR> This command allows blocking of sub-ring port to avoid temporary loop in the sub-ring, when virtual channel of subring recovers. This should be configured only on one of the interconnected nodes of a sub-ring.
+
+    COMMAND : no aps blockport-on-virtualchannel-recovery
+    ACTION  : {
+                  cli_process_erps_cmd 
+                  (CliHandle, CLI_ERPS_RING_NO_VC_BLOCK, NULL);
+
+              }
+    SYNTAX  : no aps blockport-on-virtualchannel-recovery
+    PRVID   : 15
+    HELP    : This command disables blocking of sub-ring port, when virtual
+              channel of sub-ring recovers.
+    CXT_HELP  : no Disables the configuration / deletes the entry / resets to default value|
+              aps Automatic protection switching|
+              blockport-on-virtualchannel-recovery  blocks sub-ring port during recovery of virtual channel of sub ring|
+              <CR> This command disables blocking of sub-ring port, when virtual channel of sub-ring recovers.
+
+    COMMAND : aps working meg <integer> me <integer> mep <integer(1-8191)> meg <integer> me <integer> mep <integer(1-8191)>
+    ACTION  : cli_process_erps_cmd (CliHandle, CLI_ERPS_RING_GROUP_CFM_CFG, 
+                                    NULL, $3, $5, $7, $9, $11, $13);	
+    SYNTAX  : aps working meg <meg-id(1-4294967295)> me <me-id(1-4294967295)> mep <mep-id(1-8191)> meg <meg-id(1-4294967295)> me <me-id(1-4294967295)> mep <mep-id(1-8191)>
+    PRVID   : 15
+    HELP    : Associates the fault monitoring entities (Y.1731 specific) for each of the ring ports.
+ CXT_HELP   : aps Automatic protection switching|
+              working Working identity related configuration|
+              meg Maintenance entity group related configuration|
+              <integer(1-4294967295)> Maintenance entity group ID|
+              me Maintenance entity related configuration|
+              <integer(1-4294967295)> Maintenance entity ID|
+              mep Maintenance entity group end point related configuration|
+              (1-8191) Maintenance entity group end point ID|
+              meg Maintenance entity group related configuration|
+              <integer(1-4294967295)> Maintenance entity group ID|
+              me Maintenance entity related configuration|
+              <integer(1-4294967295)> Maintenance entity ID|
+              mep Maintenance entity group end point related configuration|
+              (1-8191) Maintenance entity group end point ID|
+              <CR>  Associates the fault monitoring entities (Y.1731 specific) for each of the ring ports.
+    COMMAND : no aps working meg
+    ACTION  : cli_process_erps_cmd (CliHandle, CLI_ERPS_RING_GROUP_NO_CFM_CFG, NULL);
+    SYNTAX  : no aps working meg
+    PRVID   : 15 
+    HELP    : This command De-Associates the fault monitoring entities (Y.1731 specific) from ring ports.
+ CXT_HELP   : no Disables the configuration / deletes the entry|
+              aps Automatic protection switching|
+              working Working identity related configuration|
+              meg Maintenance entity group related configuration|
+              <CR> This command De-Associates the fault monitoring entities (Y.1731 specific) from ring ports.
+
+COMMAND : aps working pseudo-wire <integer> pseudo-wire <integer>
+    ACTION  : {
+        if ((*(UINT4 *)$3 == 0) || (*(UINT4 *)$5 == 0))
+	    {
+		    CliPrintf (CliHandle, "\r%% Invalid Interface \r\n");
+		    return CLI_FAILURE;
+	    }
+	    cli_process_erps_cmd (CliHandle, CLI_ERPS_RING_GROUP_MPLS_PW_CFG, NULL, $3, $5);
+    }
+    SYNTAX  : aps working pseudo-wire <pwid> pseudo-wire <pwid>
+    PRVID   : 15 
+    HELP    : Associates the MPLS PW information to ring ports.
+ CXT_HELP   : aps Automatic protection switching|
+              working Working identity related configuration|
+              pseudo-wire MPLS pseudo-wire related configuration|
+              (1-4294967295) pseudo-wire ID|
+              pseudo-wire MPLS pseudo-wire related configuration|
+              (1-4294967295) pseudo-wire ID|
+              <CR> Associates the MPLS PW information to ring ports.
+
+COMMAND : no aps working pseudo-wire
+    ACTION  : cli_process_erps_cmd (CliHandle, CLI_ERPS_RING_GROUP_NO_MPLS_PW_CFG, NULL);
+    SYNTAX  : no aps working pseudo-wire
+    PRVID   : 15 
+    HELP    : De-associates the MPLS PW information from ring ports.
+ CXT_HELP   : no disables the configuration and deletes the entry|
+              aps Automatic protection switching|
+              working Working identity related configuration|
+              pseudo-wire MPLS pseudo-wire related configuration|
+              <CR> De-associates the MPLS PW information from ring ports.
+
+
+  COMMAND : aps main ring id <integer>
+    ACTION  : {
+                  cli_process_erps_cmd (CliHandle, 
+                                        CLI_ERPS_RING_MAIN_RING_ID,
+                                        NULL,$4);
+              }
+    SYNTAX  : aps main ring id <main-ring-id> 
+    PRVID   : 15
+    HELP    : This command configures the ID of the main Ring to which the 
+              sub-ring is connected. When a main ring id of zero is configured
+              the sub-ring gets removed from the sub-ring list of the 
+              main ring.
+ CXT_HELP   : aps Automatic protection switching|
+              main Main Ring Id|
+              ring Ethernet protection ring|
+              id Ring Id|
+              <integer> Main ring ID|
+              <CR>  Associates the main ring id with the sub-ring. 
+
+    COMMAND : aps virtual channel recovery periodic time <integer> [{milliseconds | seconds | minutes | hours}]
+    ACTION  : {
+
+                UINT4 u4Milliseconds = 0;
+                UINT4 u4Value = 0;
+
+                u4Value = *(UINT4 *) $6;
+
+                if ($8 != NULL)
+                {
+                    if (u4Value > ERPS_3600_SECS)
+                    {
+                        CliPrintf (CliHandle, "\r%% Virtual Periodic Timer should be in the range of 1-3600 seconds\r\n");
+                    }
+                    u4Milliseconds = (u4Value * ERPS_1000_MS); 
+                }
+                else if ($9 != NULL)
+                {
+                    if (u4Value > ERPS_60_MINS)
+                    {
+                        CliPrintf (CliHandle, "\r%% Virtual Periodic Timer should be in the range of 1-60 minutes\r\n");
+                    }
+                    u4Milliseconds = (u4Value * ERPS_60000_MS);
+                }
+                else if ($10 != NULL)
+                {
+                    if (u4Value > ERPS_1_HOUR)
+                    {
+                        CliPrintf (CliHandle, "\r%% Virtual Periodic Timer  should not be greater than 1 hour\r\n");
+                    }
+                    u4Milliseconds = (u4Value * ERPS_3600000_MS);
+                }
+                else
+                {
+                    if (u4Value > ERPS_3600000_MS)
+                    {
+                        CliPrintf (CliHandle, "\r%% Virtual Periodic Timer should be in the range of 1-3600000 milliseconds \r\n");
+                    }
+                    u4Milliseconds = u4Value;
+                }
+                cli_process_erps_cmd (CliHandle, 
+                                        CLI_ERPS_RING_VC_PERIODIC_TIMER_VAL,
+                                        NULL,u4Milliseconds);
+              }
+    SYNTAX  : aps virtual channel recovery periodic time <timer_value> [{milliseconds | seconds | minutes | hours}]
+    PRVID   : 15
+    HELP    : This command configures the time interval for which the periodic 
+              timer needs to be restarted for the sub-ring, when the
+              corresponding main ring indicates the virtual channel status
+              change to this sub-ring and when the virtual channel of this 
+              sub-ring is in failed state.
+ CXT_HELP   : aps Automatic protection switching|
+              virtual virtual channel|
+              channel virtual channel of the sub-ring|
+              recovery Virtual channel recovery|
+              periodic periodic time interval|
+              time Time taken for virtual channel recovery|
+              <timer_value> Timer value can be specified in Milliseconds / seconds / minutes / hours|
+              milliseconds (0-3600000) Unit is set in milliseconds|
+              seconds (0-3600)  Unit is set in seconds|
+              minutes (0-60) Unit is set in minutes|
+              hours (0-1) Unit is set in hours|
+              <CR> Configures the time interval for which the periodic timer needs to be restarted for the sub-ring, when the corresponding main ring indicates the virtual channel status change to this sub-ring and when the virtual channel of this sub-ring is in failed state.
+
+    COMMAND : aps {force | manual} <ifXtype> <ifsnum>
+    ACTION  :{
+              
+              UINT4 u4IfIndex = 0;
+#ifdef VSI_WANTED
+              UINT1         u1Token[CFA_MAX_PORT_NAME_LENGTH] = {0};
+              INT4          i4SlotNum = 0;
+              INT4          i4PortNum = 0;
+              INT4          i4SVlan = 0;
+              INT4          i4CVlan = 0;
+              INT2          i2EncapType = 0;
+
+              MEMCPY (u1Token, $4, CFA_MAX_PORT_NAME_LENGTH * sizeof (UINT1));
+              CfaGetVepInfoFromIfname (u1Token, &i4SlotNum, &i4PortNum, &i4SVlan, &i4CVlan,
+                                       &i2EncapType);
+
+              if ((i2EncapType != OTHERS_VEP) && (i2EncapType != NULL_VEP))
+              {
+                  if (VsiApiCfaCliGetIfList ($3, $4, (INT4 *) &u4IfIndex) == CLI_FAILURE)
+                  {
+                      CliPrintf (CliHandle, "\r%% Invalid VEP Interface\r\n");
+                      return CLI_FAILURE;
+                  }
+              }
+              else
+              {
+#endif
+              if (CfaCliGetIfIndex ($3, $4, &u4IfIndex) == CLI_FAILURE)
+              {
+                 CliPrintf (CliHandle, "\r%% Invalid Interface \r\n");
+                 return CLI_FAILURE;
+              }
+#ifdef VSI_WANTED
+              }
+#endif
+              if ($1 != NULL)
+              {
+               cli_process_erps_cmd (CliHandle, CLI_ERPS_RING_NORMAL_TO_FS, 
+                                    u4IfIndex);
+              }
+              else
+              {
+               cli_process_erps_cmd (CliHandle, CLI_ERPS_RING_NORMAL_TO_MS, 
+                                    u4IfIndex);
+             
+              }
+    }
+    SYNTAX  : aps {force | manual} <interface-type> <interface-id>
+    PRVID   : 15
+    HELP    : This command applies force/manual switch for this ring on the 
+              given ring port. 
+   CXT_HELP : aps Automatic protection switching|
+              force Applies force switch for ring|
+              manual Applies manual switch for ring|
+              DYNiftype|
+              DYNifsnum|
+              <CR> This command applies force/manual switch for this ring on the given ring port.
+    
+
+    COMMAND : no aps {force | manual} 
+    ACTION  :{ 
+
+               if ($2 != NULL)
+               {
+                 cli_process_erps_cmd (CliHandle, CLI_ERPS_RING_FS_TO_NORMAL, NULL);
+               }
+               else
+               {
+                 cli_process_erps_cmd (CliHandle, CLI_ERPS_RING_MS_TO_NORMAL, NULL);
+
+               }
+    }
+    SYNTAX  : no aps {force | manual} 
+    PRVID   : 15
+    HELP    : This command clears the force / manual switch for the given ring.This command is applicable 
+              when the ERPS compatible version number is configured as 1.
+  CXT_HELP  : no Disables the configuration / deletes the entry / resets to default value|
+              aps Automatic protection switching | 
+              force Applies force switch for ring|
+              manual Applies manual switch for ring|
+              <CR> This command clears the force / manual switch for the given ring
+
+    COMMAND : aps wtb <integer> [{milliseconds | seconds | minutes | hours}]
+    ACTION  : {
+
+	    UINT4 u4Milliseconds = 0;
+	    UINT4 u4Value = 0;
+
+	    u4Value = *(UINT4 *) $2;
+
+	    if ($4 != NULL)
+	    {
+		    if (u4Value > ERPS_86400_SECS)
+		    {
+			    CliPrintf (CliHandle, "\r%% Seconds should not be greater  than 86400\r\n");
+		    }
+		    u4Milliseconds = (u4Value * ERPS_1000_MS); 
+	    }
+	    else if ($5 != NULL)
+	    {
+		    if (u4Value > ERPS_1440_MINS)
+		    {
+			    CliPrintf (CliHandle, "\r%% Minutes should not be greater than 1440\r\n");
+		    }
+		    u4Milliseconds = (u4Value * ERPS_60000_MS);
+	    }
+	    else if ($6 != NULL)
+	    {
+		    if (u4Value > ERPS_24_HOUR)
+		    {
+			    CliPrintf (CliHandle, "\r%% Hours should not be greater than 24\r\n");
+		    }
+		    u4Milliseconds = (u4Value * ERPS_3600000_MS);
+	    }
+	    else
+	    {
+		    if (u4Value > ERPS_86400000_MS)
+		    {
+			    CliPrintf (CliHandle, "\r%% Milliseconds should not be greater than 86400000\r\n");
+		    }
+		    u4Milliseconds = u4Value;
+	    }
+
+	    cli_process_erps_cmd (CliHandle, CLI_ERPS_RING_SET_WTB, NULL, u4Milliseconds);
+    }
+    SYNTAX  : aps wtb <integer> [{milliseconds | seconds | minutes | hours}]
+    PRVID   : 15
+    HELP    : Sets the timer duration of wait-to-block timer.
+  CXT_HELP  : aps Automatic protection switching|
+              wtb Wait to Block timer value configuration|
+              <timer_value> Timer value can be specified in Milliseconds / seconds / minutes / hours|
+              milliseconds (0-86400000) Unit is set in milliseconds|
+              seconds (0-86400)  Unit is set in seconds|
+              minutes (0-1440) Unit is set in minutes|
+              hours (0-24) Unit is set in hours|
+              <CR> Sets the timer duration of wait-to-block timer. 
+
+    COMMAND : aps clear  
+    ACTION  :{
+               cli_process_erps_cmd (CliHandle,CLI_ERPS_RING_CLEAR_COMMAND, NULL);
+            }
+    SYNTAX  : aps clear 
+    PRVID   : 15
+    HELP    : This command use to trigger clear operation to remove the switch commands (Force Switch/Manual Switch) 
+              or trigger reversion in revertive mode before the WTR or WTB timer expires or trigger reversion in non-revertive mode
+              when the ERPS compatible version number is configured as 2. 
+   CXT_HELP : aps Automatic protection switching|
+              clear clear the Force Switch /Manual Switch/non-revertive/revertive mode| 
+              <CR>  This command use to trigger clear operation to remove the switch commands (Force Switch/Manual Switch) or trigger reversion in revertive mode before the WTR or WTB timer expires or trigger reversion in non-revertive mode when the ERPS compatible version number is configured as 2.
+
+
+    COMMAND : aps revert [wtr] <integer> [{milliseconds | seconds | minutes | hours}]
+    ACTION  : {
+        UINT4 u4Milliseconds = 0;
+        UINT4 u4Value = 0;
+
+        u4Value = *(UINT4 *) $3;
+
+        if ($5 != NULL)
+        {
+            if (u4Value > ERPS_86400_SECS)
+            {
+                CliPrintf (CliHandle, "\r%% Seconds should not be greater  than 86400\r\n");
+            }
+            u4Milliseconds = (u4Value * ERPS_1000_MS); 
+        }
+        else if ($6 != NULL)
+        {
+            if (u4Value > ERPS_1440_MINS)
+            {
+                CliPrintf (CliHandle, "\r%% Minutes should not be greater than 1440\r\n");
+            }
+            u4Milliseconds = (u4Value * ERPS_60000_MS);
+        }
+        else if ($7 != NULL)
+        {
+            if (u4Value > ERPS_24_HOUR)
+            {
+                CliPrintf (CliHandle, "\r%% Hours should not be greater than 24\r\n");
+            }
+            u4Milliseconds = (u4Value * ERPS_3600000_MS);
+        }
+        else
+        {
+            if (u4Value > ERPS_86400000_MS)
+            {
+                CliPrintf (CliHandle, "\r%% Milliseconds should not be greater than 86400000\r\n");
+            }
+            u4Milliseconds = u4Value;
+        }
+        if ($2 != NULL)
+        {
+            cli_process_erps_cmd (CliHandle, 
+                                  CLI_ERPS_RING_GROUP_REVERT_WITH_WTR,
+                                  NULL, u4Milliseconds);
+        }
+        else
+        {
+            cli_process_erps_cmd (CliHandle, 
+                                  CLI_ERPS_RING_GROUP_REVERT,
+                                  NULL, u4Milliseconds);
+        }
+    }
+    SYNTAX  : aps revert [wtr] <timer_value> [{milliseconds | seconds | minutes | hours}]
+    PRVID   : 15
+    HELP    : Sets the operating mode of this ring group to revertive and
+              also it sets the timer duration of wait-to-restore timer.
+  CXT_HELP  : aps Automatic protection switching|
+              revert Revertive mode of operation|
+              wtr Wait to restore timer value configuration|
+              <timer_value> Timer value can be specified in Milliseconds / seconds / minutes / hours|
+              milliseconds (0-86400000) Unit is set in milliseconds|
+              seconds (0-86400) Unit is set in seconds|
+              minutes (0-1440) Unit is set in minutes|
+              hours (0-24) Unit is set in hours|
+              <CR> Sets the operating mode of this ring group to revertive and also it sets the timer duration of wait-to-restore timer.
+              
+
+    COMMAND : no aps revert [manual]
+    ACTION  : cli_process_erps_cmd (CliHandle, CLI_ERPS_RING_NON_REVERT, NULL, $3);
+    SYNTAX  : no aps revert [manual]
+    PRVID   : 15
+    HELP    : Resets the operating mode of this ring from revertive mode to 
+              non-revertive mode. If manual option is given then manual 
+              recovery method will be used.
+  CXT_HELP  : no Disables the configuration / deletes the entry / resets to default value|
+              aps Automatic protection switching|
+              revert Revertive mode of operation|
+              manual Manual recovery method|
+              <CR> Resets the operating mode of this ring from revertive mode to non-revertive mode. If manual option is given then manual recovery method will be used.
+
+    COMMAND : aps timers periodic <integer>  {milliseconds | seconds | minutes | hours}  [hold-off <integer> {milliseconds | seconds | minutes | hours}] [guard <integer> {milliseconds | seconds | minutes | hours}]
+    ACTION  : {
+        UINT4 u4PeriodicTimerVal = 0xffffffff;
+        UINT4 u4HoldOffTimerVal = 0xffffffff;
+        UINT4 u4GuardTimerVal = 0xffffffff;  
+        if($2 != NULL)
+        {     
+            u4PeriodicTimerVal = *(UINT4*) $3;
+            if($3 != NULL)
+            { 
+                if($5 != NULL)
+                {
+                    if((u4PeriodicTimerVal > ERPS_3600_SECS) || (u4PeriodicTimerVal < ERPS_1_SECS))
+                    {
+                        CliPrintf (CliHandle, "\r%% Periodic Timer should be with in the range of 1 - 3600 seconds\r\n");
+                        return CLI_FAILURE;
+                    }
+                    u4PeriodicTimerVal = u4PeriodicTimerVal * ERPS_1000_MS;
+                }
+                else if($6 != NULL)
+                {
+                    if(( u4PeriodicTimerVal > ERPS_60_MINS) || (u4PeriodicTimerVal < ERPS_1_MIN))
+                    {
+                        CliPrintf (CliHandle, "\r%% Periodic Timer should be with in the range of 1 - 60 minutes\r\n");
+                        return CLI_FAILURE;
+                    }
+                    u4PeriodicTimerVal = u4PeriodicTimerVal * ERPS_60000_MS;
+                }
+                else if($7 != NULL)
+                {
+                    if((u4PeriodicTimerVal > ERPS_1_HOUR) || (u4PeriodicTimerVal < ERPS_1_HOUR))
+                    {
+                        CliPrintf (CliHandle, "\r%% Periodic timer should not be greater than 1 hour\r\n");
+                        return CLI_FAILURE;
+                    }
+                    u4PeriodicTimerVal = ERPS_3600000_MS;
+                }
+                else
+                {
+                    if ((u4PeriodicTimerVal > ERPS_3600000_MS) || (u4PeriodicTimerVal < ERPS_1_MS)) 
+                    {
+                        CliPrintf (CliHandle,"\r%% Periodic Timer should be with in the range of 1 - 3600000 milli-seconds\r\n");
+                        return CLI_FAILURE;
+                    }
+                }
+            }
+        }
+        if($8 != NULL)
+        {
+            u4HoldOffTimerVal  = *(UINT4*) $9;
+            if($9 != NULL)
+            {
+                if($11 != NULL)
+                {
+                    if(u4HoldOffTimerVal > ERPS_3600_SECS)
+                    {
+                        CliPrintf (CliHandle, "\r%% Hold-off timer should be with in the range of 0 - 3600 seconds\r\n");
+                        return CLI_FAILURE;
+                    }
+                    u4HoldOffTimerVal = u4HoldOffTimerVal * ERPS_1000_MS;
+                }
+                else if($12 != NULL)
+                {
+                    if(u4HoldOffTimerVal > ERPS_60_MINS)
+                    {
+                        CliPrintf (CliHandle, "\r%% Hold-off timer should be with in the range of 0 - 60 minutes\r\n"); 
+                        return CLI_FAILURE;
+                    }
+                    u4HoldOffTimerVal = u4HoldOffTimerVal * ERPS_60000_MS;
+                }
+                else if($13 != NULL)
+                {
+                    if(u4HoldOffTimerVal > ERPS_1_HOUR)
+                    {
+                        CliPrintf (CliHandle, "\r%% Hold-off timer should not be greater than 1 hour\r\n");
+                        return CLI_FAILURE;
+                    }
+                    u4HoldOffTimerVal = ERPS_3600000_MS;
+                }
+                else
+                {
+                    if (u4HoldOffTimerVal > ERPS_3600000_MS) 
+                    {
+                        CliPrintf (CliHandle,"\r%% Hold-off timer should be with in the range of 0 - 3600000 milli-seconds\r\n");
+                        return CLI_FAILURE;
+                    }
+                }
+            }
+        }
+
+        if($14  != NULL)
+        {
+            u4GuardTimerVal    = *(UINT4*) $15;
+            if($15  != NULL)
+            {
+                if($17 != NULL)
+                {
+                    if(u4GuardTimerVal > ERPS_3600_SECS)
+                    {
+                        CliPrintf (CliHandle, "\r%% Guard timer should be with in the range of 0 - 3600 seconds\r\n");
+                        return CLI_FAILURE;
+                    }
+                    u4GuardTimerVal    = u4GuardTimerVal * ERPS_1000_MS;
+                }
+                else if($18 != NULL)
+                {
+                    if(u4GuardTimerVal > ERPS_60_MINS)
+                    {
+                        CliPrintf (CliHandle, "\r%% Guard timer should be with in the range of 0 - 60 minutes\r\n");
+                        return CLI_FAILURE;
+                    }
+                    u4GuardTimerVal    = u4GuardTimerVal * ERPS_60000_MS;
+                }
+                else if($19 != NULL)
+                {
+                    if(u4GuardTimerVal > ERPS_1_HOUR)
+                    {
+                        CliPrintf (CliHandle, "\r%% Guard timer should not be greater than 1 hour\r\n");
+                        return CLI_FAILURE;
+                    }
+                    u4GuardTimerVal    = ERPS_3600000_MS;
+                }
+                else
+                {
+                    if (u4GuardTimerVal > ERPS_3600000_MS) 
+                    {
+                        CliPrintf (CliHandle,"\r%% Guard timer should be with in the range of 0 - 3600000 milli-seconds\r\n");
+                        return CLI_FAILURE;
+                    }
+                }
+            }
+        }
+        cli_process_erps_cmd (CliHandle, CLI_ERPS_RING_GROUP_TIMER_VAL, NULL, 
+                              u4PeriodicTimerVal, u4HoldOffTimerVal, 
+                              u4GuardTimerVal);
+    }
+    SYNTAX  : aps timers periodic <integer>  {milliseconds | seconds | minutes | hours}  [hold-off <integer> {milliseconds | seconds | minutes | hours}] [guard <integer> {milliseconds | seconds | minutes | hours}]
+    PRVID   : 15
+    HELP    : Configures the APS timers.
+   CXT_HELP : aps Automatic protection switching|
+              timers Timer configuration|
+              periodic Interval for periodic transmission of RAPS PDUs|
+              <timer_value> Timer Value can be specified in Milliseconds / seconds / minutes / hours|
+              milliseconds (0-3600000) Unit is set in milliseconds|
+              seconds  (0-3600) Unit is set in seconds|
+              minutes (0-60) Unit is set in minutes|
+              hours  (0-1) Unit is set in hours|
+              hold-off  Hold off timer value configuration|
+	      <timer_value> Timer Value can be specified in Milliseconds / seconds / minutes / hours|
+              milliseconds (0-3600000) Unit is set in milliseconds|
+              seconds  (0-3600) Unit is set in seconds|
+              minutes (0-60) Unit is set in minutes|
+              hours  (0-1) Unit is set in hours|
+              guard Guard Interval to prevent reception of outdated RAPS messages|
+              <timer_value> Timer Value can be specified in Milliseconds / seconds / minutes / hours|
+              milliseconds (0-3600000) Unit is set in milliseconds|
+              seconds  (0-3600) Unit is set in seconds|
+              minutes (0-60) Unit is set in minutes|
+              hours  (0-1) Unit is set in hours|
+              <CR> Configures the APS timers.
+
+    
+    COMMAND : aps timers hold-off <integer> {milliseconds | seconds | minutes | hours} [guard <integer> {milliseconds | seconds | minutes | hours}] 
+    ACTION  : { 
+        UINT4 u4PeriodicTimerVal =  0xffffffff; 
+        UINT4 u4HoldOffTimerVal  =  0xffffffff; 
+        UINT4 u4GuardTimerVal    =  0xffffffff; 
+        if($2 != NULL) 
+        { 
+            u4HoldOffTimerVal  = *(UINT4*) $3; 
+            if($3 != NULL) 
+            { 
+                if($5 != NULL) 
+                { 
+                    if(u4HoldOffTimerVal > ERPS_3600_SECS) 
+                    { 
+                        CliPrintf (CliHandle, "\r%% Hold-off timer should be with in the range of 0 - 3600 seconds\r\n"); 
+                        return CLI_FAILURE; 
+                    } 
+                    u4HoldOffTimerVal = u4HoldOffTimerVal * ERPS_1000_MS; 
+                } 
+                else if($6 != NULL) 
+                { 
+                    if(u4HoldOffTimerVal > ERPS_60_MINS) 
+                    { 
+                        CliPrintf (CliHandle, "\r%% Hold-off timer should be with in the range of 0 - 60 minutes\r\n"); 
+                        return CLI_FAILURE; 
+                    } 
+                    u4HoldOffTimerVal = u4HoldOffTimerVal * ERPS_60000_MS; 
+                } 
+                else if($7 != NULL) 
+                { 
+                    if(u4HoldOffTimerVal > ERPS_1_HOUR) 
+                    { 
+                        CliPrintf (CliHandle, "\r%% Hold-off timer should not be greater than 1 hour\r\n"); 
+                        return CLI_FAILURE; 
+                    } 
+                    u4HoldOffTimerVal = ERPS_3600000_MS; 
+                } 
+                else if($4 !=NULL) 
+                { 
+                    if (u4HoldOffTimerVal > ERPS_3600000_MS) 
+                    { 
+                        CliPrintf (CliHandle,"\r%% Hold-off timer should be with in the range of 0 - 3600000 milli-seconds\r\n"); 
+                        return CLI_FAILURE; 
+                    } 
+                } 
+            } 
+        } 
+        if($8  != NULL) 
+        { 
+            u4GuardTimerVal    = *(UINT4*) $9; 
+            if($9  != NULL) 
+            { 
+                if($11 != NULL) 
+                { 
+                    if(u4GuardTimerVal > ERPS_3600_SECS) 
+                    { 
+                        CliPrintf (CliHandle, "\r%% Guard timer should be with in the range of 0 - 3600 seconds\r\n"); 
+                        return CLI_FAILURE; 
+                    } 
+                    u4GuardTimerVal    = u4GuardTimerVal * ERPS_1000_MS; 
+                } 
+                else if($12 != NULL) 
+                { 
+                    if(u4GuardTimerVal > ERPS_60_MINS) 
+                    { 
+                        CliPrintf (CliHandle, "\r%% Guard timer should be with in the range of 0 - 60 minutes\r\n"); 
+                        return CLI_FAILURE; 
+                    } 
+                    u4GuardTimerVal    = u4GuardTimerVal * ERPS_60000_MS; 
+                } 
+                else if($13 != NULL) 
+                { 
+                    if(u4GuardTimerVal > ERPS_1_HOUR) 
+                    { 
+                        CliPrintf (CliHandle, "\r%% Guard timer should not be greater than 1 hour\r\n"); 
+                        return CLI_FAILURE; 
+                    } 
+                    u4GuardTimerVal    = ERPS_3600000_MS; 
+                } 
+                else if($10 !=NULL) 
+                { 
+                    if (u4GuardTimerVal > ERPS_3600000_MS) 
+                    { 
+                        CliPrintf (CliHandle,"\r%% Guard timer should be with in the range of 0 - 3600000 milli-seconds\r\n"); 
+                        return CLI_FAILURE; 
+                    } 
+                } 
+            } 
+        } 
+        cli_process_erps_cmd (CliHandle, CLI_ERPS_RING_GROUP_TIMER_VAL, NULL, 
+                              u4PeriodicTimerVal, u4HoldOffTimerVal, 
+                              u4GuardTimerVal); 
+    } 
+    SYNTAX  : aps timers hold-off <integer> {milliseconds | seconds | minutes | hours} [guard <integer> {milliseconds | seconds | minutes | hours}] 
+    PRVID   : 15 
+    HELP    : Configures APS hold-off timer. 
+   CXT_HELP : aps Automatic protection switching| 
+              timers Timer configuration| 
+              hold-off  Hold off timer value configuration| 
+              <timer_value> Timer Value can be specified in Milliseconds / seconds / minutes / hours| 
+              milliseconds (0-3600000) Unit is set in milliseconds| 
+              seconds  (0-3600) Unit is set in seconds| 
+              minutes (0-60) Unit is set in minutes| 
+              hours  (0-1) Unit is set in hours| 
+              guard Guard Interval to prevent reception of outdated RAPS messages| 
+              <timer_value> Timer Value can be specified in Milliseconds / seconds / minutes / hours| 
+              milliseconds (0-3600000) Unit is set in milliseconds| 
+              seconds (0-3600) Unit is set in seconds| 
+              minutes (0-60) Unit is set in minutes| 
+              hours (0-1) Unit is set in hours| 
+              <CR> Configures the APS hold-off timer. 
+ 
+ 
+    COMMAND : aps timers guard <integer> {milliseconds | seconds | minutes | hours} 
+    ACTION  : { 
+        UINT4 u4PeriodicTimerVal =  0xffffffff; 
+        UINT4 u4HoldOffTimerVal  =  0xffffffff; 
+        UINT4 u4GuardTimerVal    =  0xffffffff; 
+        if($2  != NULL) 
+        { 
+            u4GuardTimerVal    = *(UINT4*) $3; 
+            if($3  != NULL) 
+            { 
+                if($5 != NULL) 
+                { 
+                    if(u4GuardTimerVal > ERPS_3600_SECS) 
+                    { 
+                        CliPrintf (CliHandle, "\r%% Guard timer should be with in the range of 0 - 3600 seconds\r\n"); 
+                        return CLI_FAILURE; 
+                    } 
+                    u4GuardTimerVal    = u4GuardTimerVal * ERPS_1000_MS; 
+                } 
+                else if($6 != NULL) 
+                { 
+                    if(u4GuardTimerVal > ERPS_60_MINS) 
+                    { 
+                        CliPrintf (CliHandle, "\r%% Guard timer should be with in the range of 0 - 60 minutes\r\n"); 
+                        return CLI_FAILURE; 
+                    } 
+                    u4GuardTimerVal    = u4GuardTimerVal * ERPS_60000_MS; 
+                } 
+                else if($7 != NULL) 
+                { 
+                    if(u4GuardTimerVal > ERPS_1_HOUR) 
+                    { 
+                        CliPrintf (CliHandle, "\r%% Guard timer should not be greater than 1 hour\r\n"); 
+                        return CLI_FAILURE; 
+                    } 
+                    u4GuardTimerVal    = ERPS_3600000_MS; 
+                } 
+                else 
+                { 
+                    if (u4GuardTimerVal > ERPS_3600000_MS) 
+                    { 
+                        CliPrintf (CliHandle,"\r%% Guard timer should be with in the range of 0 - 3600000 milli-seconds\r\n"); 
+                        return CLI_FAILURE; 
+                    } 
+                } 
+            } 
+        } 
+        cli_process_erps_cmd (CliHandle, CLI_ERPS_RING_GROUP_TIMER_VAL, NULL, 
+                              u4PeriodicTimerVal, u4HoldOffTimerVal, 
+                              u4GuardTimerVal); 
+    } 
+    SYNTAX  : aps timers guard <integer> {milliseconds | seconds | minutes | hours} 
+    PRVID   : 15 
+    HELP    : Configures the APS guard timer. 
+   CXT_HELP : aps Automatic protection switching| 
+              timers Timer configuration| 
+              guard Guard Interval to prevent reception of outdated RAPS messages|
+              <timer_value> Timer Value can be specified in Milliseconds / seconds / minutes / hours|
+              milliseconds (0-3600000) Unit is set in milliseconds|
+              seconds  (0-3600) Unit is set in seconds|
+              minutes (0-60) Unit is set in minutes|
+              hours  (0-1) Unit is set in hours|
+              <CR> Configures the APS guard timer. 
+
+    COMMAND : exit
+    ACTION  : {
+                 CLI_SET_RING_ID (-1);
+                 CliChangePath ("..");
+              }
+    SYNTAX  : exit
+    PRVID   : 15
+    HELP    : Exits to configure mode.
+   CXT_HELP : exit Exits to global configure mode|
+              <CR> Exits to configure mode
+    
+    COMMAND : aps propagate-tc {[status {enable | disable}]} [ring-ids <string>]
+    ACTION  : 
+
+
+            if ($3 != NULL)
+            {
+                cli_process_erps_cmd (CliHandle, CLI_ERPS_RING_PROPAGATE_TC, NULL,$6);
+            }
+            else
+            {
+                cli_process_erps_cmd (CliHandle,CLI_ERPS_RING_NOT_PROPAGATE_TC, NULL,$6);
+            }
+
+    SYNTAX  : aps propagate-tc {[status {enable | disable}]} [ring-ids <ringid-rang>]
+    PRVID   : 15
+    HELP    : Configures the propagate TC flag for this ring and
+              also configures the ids of rings, where the TC needs to be 
+              propagated.
+              Ring id of this ring(self ring id) should not be configured  
+              in the TC ring id list.
+   CXT_HELP : aps Automatic protection switching|
+              propagate-tc TC propagation related configuration| 
+              status Status of TC propagation|
+              enable Enables the TC propagation flag|
+              disable Disables the TC propagation flag|
+              ring-ids Ring ID configuration for TC propagation|
+              <string> List of Ring IDs|
+              <CR> Configures the propagate TC flag for this ring and also configures the ids of rings, where the TC needs to be propagated.Ring id of this ring(self ring id) should not be configured in the TC ring id list.
+
+
+    COMMAND : no aps propagate-tc [ring-ids <string>]
+    ACTION  : {
+	    UINT1 u1DelFlag = CLI_ERPS_RING_DEL_ALL_PROPAGATE_TC; 
+
+	    if ($3 != NULL)
+	    {
+		    cli_process_erps_cmd (CliHandle,CLI_ERPS_RING_DEL_PROPAGATE_TC, NULL,$4);
+	    }
+	    else
+	    {
+		    cli_process_erps_cmd (CliHandle, CLI_ERPS_RING_DEL_ALL_PROPAGATE_TC, NULL,u1DelFlag);
+	    }
+    }
+    SYNTAX  : no aps propagate-tc [ring-ids <ringid-rang>]
+    PRVID   : 15
+    HELP    : This command removes the configured TC list for this ring.
+   CXT_HELP : no Disables the configuration / deletes the entry / resets to default value|
+              aps Automatic protection switching|
+              propagate-tc TC propagation related configuration|
+              ring-ids Ring ID configuration for TC propagation|
+              <string> List of Ring IDs|
+              <CR> This command removes the configured TC list for this ring.
+
+   COMMAND: aps map {vlan-group <short(0-64)> | vlan-group-list <port_list> } 
+   ACTION : {
+
+             if ($2 != NULL)
+             {
+                 cli_process_erps_cmd(CliHandle, CLI_ERPS_MAP_GROUP_TO_RING, NULL,
+                                                              $3);
+             }
+             else if ($4 != NULL)
+             {
+                 cli_process_erps_cmd(CliHandle, CLI_ERPS_MAP_VLANGROUP_LIST_TO_RING, NULL,
+                                                              $5);
+             }
+            }
+   SYNTAX : aps map [vlan-group <short(0-64)> | vlan-group-list <vlan_list> ]
+   PRVID : 15
+   HELP :   Associates a vlan group or list of vlan groups to a ring.
+   CXT_HELP : aps Automatic protection switching | 
+		  map Associates a specified VLAN group or list of VLAN groups to the ERPS ring | 
+		  vlan-group VLAN group | 
+		  (0-64) VLAN group ID | 
+                  vlan-group-list VLAN groups List | 
+	          <vlan_list> List of vlan group IDs separated by a comma |
+		  <CR> Associates a vlan group or list of vlan groups to a ring.
+   
+   COMMAND: aps mac-id {<integer(1-255)>}
+   ACTION : {
+              cli_process_erps_cmd(CliHandle, CLI_ERPS_ASSIGN_MAC_ID, NULL,
+                                                              $2);
+            }
+   SYNTAX : aps mac-id {<integer(1-255)>} 
+   PRVID  : 15
+   HELP   : Configures the id to be sent as last octet in the destination mac address of R-APS packets of this ring.
+   CXT_HELP : aps Automatic protection switching | 
+		  mac-id ID of the ring instance to be communicated through R-APS PDUs to other ring nodes | 
+		  (1-255) ID that forms the last octet of the destination MAC address field of the R-APS PDUs | 
+		  <CR> Configures the ID to be sent as last octet in the destination MAC address of R-APS packets of this ring
+
+  COMMAND: aps protection-type {port-based | service-based}
+  ACTION:
+  {
+    UINT4 u4ProtectionType=0;
+    if($2 !=NULL)
+    {
+        u4ProtectionType= ERPS_PORT_BASED_PROTECTION;
+    }
+    if($3 != NULL)
+    {
+        u4ProtectionType= ERPS_SERVICE_BASED_PROTECTION;
+    }
+    cli_process_erps_cmd(CliHandle, CLI_ERPS_SET_PROTECTION_TYPE, NULL,
+                                                              u4ProtectionType);
+  }
+  SYNTAX : aps protection-type {port-based | service-based}
+  PRVID : 1
+  HELP : Configures the protection type for the ring.
+  CXT_HELP : aps Automatic protection switching | 
+		 protection-type Type of protection to be provided by the ring instance | 
+		 port-based Ring applies the protection switching mechanism for all traffics passing through its ring ports | 
+		 service-based Ring applies the protection switching mechanism only for the set of VLANs mapped to the ring instance | 
+		 <CR> Configures the protection type for the ring
+
+    COMMAND : aps compatible version {v1 | v2} 
+    ACTION  : 
+             {
+                 if($3 != NULL)
+                 {
+                 cli_process_erps_cmd (CliHandle, CLI_ERPS_RING_VERSION, NULL,ERPS_RING_COMPATIBLE_VERSION1);
+	         }
+                 if($4 != NULL)
+                 {
+     	         cli_process_erps_cmd (CliHandle, CLI_ERPS_RING_VERSION, NULL,ERPS_RING_COMPATIBLE_VERSION2);
+                 }
+             }
+    SYNTAX  : aps compatible version {v1 | v2}
+    PRVID   : 15
+    HELP    : This command configures the ring version for the ring entry in the ERPS.
+   CXT_HELP : aps Automatic protection switching|
+              compatible compatible version| 
+              version  ERPS version|
+              v1 ERPS version1|
+	      v2 ERPS version2|
+              <CR> This command configures the ring version number for the ring.
+
+    COMMAND : aps interconnection-node {none | primary | secondary} 
+    ACTION  : 
+             {
+             if($2 != NULL)
+             {
+                 cli_process_erps_cmd (CliHandle, CLI_ERPS_RING_INTER_CONN_NODE, NULL,ERPS_RING_INTER_CONN_NODE_NONE);
+             }
+             if($3 != NULL)
+             {
+             cli_process_erps_cmd (CliHandle, CLI_ERPS_RING_INTER_CONN_NODE, NULL,ERPS_RING_INTER_CONN_NODE_PRIMARY);
+             }
+             if($4 != NULL)
+             {
+             cli_process_erps_cmd (CliHandle, CLI_ERPS_RING_INTER_CONN_NODE, NULL,ERPS_RING_INTER_CONN_NODE_SECONDARY);
+             }
+             }
+    SYNTAX  : aps interconnection-node {none | primary | secondary}  
+    PRVID   : 15
+    HELP    : This command configures the interconnection node of the sub-ring.
+   CXT_HELP : aps Automatic protection switching|
+              interconnection-node inter connection node| 
+              none      value for inter connection node is none|
+              primary   value for inter connection node is primary|
+              secondary value for inter connection node is secondary|
+              <CR> This command configures the interconnection node of the sub-ring.
+
+    COMMAND : aps multiple-failure {disabled | primary | secondary} 
+    ACTION  : 
+             {
+             if($2 != NULL)
+             {
+                 cli_process_erps_cmd (CliHandle,CLI_ERPS_RING_MULTIPLE_FAILURE, NULL,ERPS_RING_MULTIPLE_FAILURE_DISABLED);
+             }
+             if($3 != NULL)
+             {
+             cli_process_erps_cmd (CliHandle, CLI_ERPS_RING_MULTIPLE_FAILURE, NULL,ERPS_RING_MULTIPLE_FAILURE_PRIMARY);
+             }
+             if($4 != NULL)
+             {
+             cli_process_erps_cmd (CliHandle, CLI_ERPS_RING_MULTIPLE_FAILURE, NULL,ERPS_RING_MULTIPLE_FAILURE_SECONDARY);
+             }
+             }
+    SYNTAX  : aps multiple-failure {disabled | primary | secondary}  
+    PRVID   : 15
+    HELP    : This command configures the multiple failure in interconnection node of the sub-ring.
+   CXT_HELP : aps Automatic protection switching|
+              multiple-failure multiple failure| 
+              disabled  value for multiple failure is disabled|
+              primary   value for multiple failure is primary|
+              secondary value for multiple failure is secondary|
+              <CR> This command configures the multiple failure in interconnection node of the sub-ring.
+
+    COMMAND : aps subring-without-virtualchannel {enable | disable}
+    ACTION  : {
+                 if($2 != NULL)
+                 {
+                  cli_process_erps_cmd (CliHandle, 
+                                        CLI_ERPS_RING_WITHOUT_VC,NULL,
+                                        OSIX_ENABLED);
+                 }
+                 if($3 != NULL)
+                 {
+                  cli_process_erps_cmd (CliHandle, 
+                                        CLI_ERPS_RING_WITHOUT_VC,NULL,
+                                        OSIX_DISABLED);
+                 }
+              }
+    SYNTAX  : aps subring-without-virtualchannel {enable | disable}
+    PRVID   : 15
+    HELP    : This command allows blocking/unblocking of R-APS channel in the sub-ring
+    CXT_HELP : aps Automatic protection switching|
+               subring-without-virtualchannel blocks R-APS channel of sub-ring| 
+               enable enable|
+               disable disable|
+               <CR> This command allows blocking/unblocking of R-APS channel in the sub-ring
+
+    COMMAND : aps distribute <ifXtype> <ifsnum>
+    ACTION  : {
+                  UINT4 u4IfIndex = 0;
+
+                  if (CfaCliGetIfIndex ($2, $3, &u4IfIndex) == CLI_FAILURE)
+                  {
+                      CliPrintf (CliHandle, "\r%% Invalid Interface \r\n");
+                      return CLI_FAILURE;
+                  }
+
+                  cli_process_erps_cmd (CliHandle, 
+                                        CLI_ERPS_RING_DISTRIBUTE_PORT,
+                                        NULL, u4IfIndex);
+              }
+    SYNTAX  : aps distribute <interface_type> <interface_id>
+    PRVID   : 15
+    HELP    : This command configures the given port as one of the distributing 
+              port for the ring group and by this fault monitoring entities (Y.1731 specific)
+              will be Associated with this ring port instead of Ring Ports.
+              The port that is configured as ring port should not be configured as distributing port.
+   CXT_HELP : aps Enables Automatic protection switching|
+              distribute distributing port configuration|
+              DYNiftype|
+              DYNifsnum|
+              <CR> Configures the ring port as distributing port.The fault monitoring entities (Y.1731 specific) will be Associated with this ring port.
+              
+    COMMAND : no aps distribute
+    ACTION  : {
+                  cli_process_erps_cmd (CliHandle, 
+                                        CLI_ERPS_RING_NO_DISTRIBUTE_PORT,
+                                        NULL);
+
+              }
+    SYNTAX  : no aps distribute
+    PRVID   : 15
+    HELP    : This command removes the distributing port configuration from the ring,
+              If the given port is earlier configured as distributing port.
+   CXT_HELP : no Disables the configuration / deletes the entry / resets to default value|
+              aps Automatic protection switching|
+              distribute distributing port configuration|
+              <CR> Removes the distributing port configuration from the ring.
+
+
+COMMAND : aps ring {[port1 {local | remote}] [port2 {local | remote}]}
+    ACTION  : 
+             {
+                 UINT1 u1Port1Presence = ERPS_PORT_IN_LOCAL_LINE_CARD;
+		 UINT1 u1Port2Presence = ERPS_PORT_IN_LOCAL_LINE_CARD;
+
+                 if($3 != NULL)
+                 {
+		 	u1Port1Presence = ERPS_PORT_IN_LOCAL_LINE_CARD;
+	         }
+                 else if($4 != NULL)
+                 {
+                 	u1Port1Presence = ERPS_PORT_IN_REMOTE_LINE_CARD;
+     	         }
+                 if($6 != NULL)
+                 {
+		 	u1Port2Presence = ERPS_PORT_IN_LOCAL_LINE_CARD;
+	         }
+                 else if($7 != NULL)
+                 {
+                 	u1Port2Presence = ERPS_PORT_IN_REMOTE_LINE_CARD;
+     	         }
+                 if($2 != NULL)
+                 {
+                 	cli_process_erps_cmd (CliHandle, CLI_ERPS_RING_PORT1_PRESENCE, NULL, u1Port1Presence);
+	         }
+		 if($5 != NULL)
+                 {
+			 cli_process_erps_cmd (CliHandle, CLI_ERPS_RING_PORT2_PRESENCE, NULL, u1Port2Presence);
+     	         }
+             }
+    SYNTAX  : aps ring {[port1 {local | remote}] [port2 {local | remote}]}
+    PRVID   : 15
+    HELP    : This command configures the ring port1 or port2 or both as local or remote.
+    CXT_HELP : aps Enables Automatic protection switching|
+              ring Ethernet protection ring| 
+              port1 Configures the first ring port|
+              local Configures port 1 as local when port 1 is present in the local line card |
+              remote Configures port 1 as remote when port 1 is present in the local remote card |
+              port2 Configures second ring port|
+              local Configures port 2 as local when port 2 is present in the local line card|
+              remote Configures port 2 as remote when port 2 is present in the remote line card|
+              <CR> Configures the ring port1 or/and port2 as local or remote
+
+    COMMAND : aps kvalue <string(32)>
+    ACTION  : cli_process_erps_cmd (CliHandle, CLI_ERPS_RING_KVALUE, NULL, $2);
+    SYNTAX  : aps kvalue <string(32)>
+    PRVID   : 15
+    HELP    : This command configures the kvalue for which, TFOP timer can run multiple of the periodic timer. 
+              kvalue is for TFOP defect indication.
+    CXT_HELP  : aps Enables Automatic protection switching|
+              kvalue configuring the kvalue|
+              <string(32)> Integer value of K for which the TFOP timer can run multiple of the periodic timer|
+              <CR>  Configures the integer value for which it is used for the TFOP defect indication.
+
+    COMMAND : aps ring FailureOfProtocol { enable | disable }
+    ACTION  : {
+		  if ($3 != NULL)
+		  {
+			  cli_process_erps_cmd (CliHandle, 
+		                		    CLI_ERPS_FOP_TO_ENABLE,
+					                NULL);
+		  }
+		  else
+		  {
+			  cli_process_erps_cmd (CliHandle,
+					                CLI_ERPS_FOP_TO_DISABLE,
+					                NULL);
+		  }
+	  }
+    SYNTAX  : aps ring FailureOfProtocol { enable | disable }
+    PRVID   : 15
+    HELP    : Enable/Disable ERPS Failure Of Protocol feature
+   CXT_HELP : aps Automatic protection switching|
+              ring Ethernet protection ring|
+              FailureOfProtocol ERPS Failure Of Protocol functionality|
+              enable Enables ERPS Failure Of Protocol due to Timeout|
+              disable Disables ERPS Failure Of Protocol due to Timeout|
+              <CR> Enable/Disable ERPS Failure Of Protocol feature
+
+
+    COMMAND : aps monitor {cfm | mplsoam}
+    ACTION  : {
+                  if ($2 != NULL)
+                  {
+                      cli_process_erps_cmd (CliHandle,
+                                            CLI_ERPS_MONITOR_MECH,
+                                            NULL,
+                                            ERPS_MONITOR_MECH_CFM);
+                  }
+                  else if ($3 != NULL)
+                  {
+                      cli_process_erps_cmd (CliHandle,
+                                            CLI_ERPS_MONITOR_MECH,
+                                            NULL,
+                                            ERPS_MONITOR_MECH_MPLSOAM);
+                  }
+              }
+    SYNTAX  : aps monitor {cfm | mplsoam}
+    PRVID   : 15
+    HELP    : Configures the fault monitoring mechanism for this protection
+              group.
+    CXT_HELP : aps  Automatic protection switching related configuration|
+              monitor Fault monitoring mechanism related configuration|
+              cfm Fault monitoring mechanism is configured as cfm |
+              mplsoam Fault monitoring mechanism is configured as mpls OAM |
+              <CR> Configures the fault monitoring mechanism for this protection group
+
+
+END GROUP
+
+DEFINE GROUP : ERPS_SHOW_CMD
+
+    COMMAND : show aps ring vlan-group [<short(0-64)>] [switch <string(32)>]
+    ACTION  : {
+                INT4 i4VlanGroup = -1;
+                if($4 != NULL)
+                {
+                    i4VlanGroup = *(INT4*)$4;
+                }
+                cli_process_erps_sh_cmd (CliHandle, CLI_ERPS_SHOW_VLAN_GROUP_INFO,NULL, $6,i4VlanGroup);
+              }
+    SYNTAX  : show aps ring vlan-group [<short(0-64)>][switch <context_name>]
+    PRVID   : 15
+    HELP    : Displays the Vlan to group mapping.
+    CXT_HELP : show Displays the configuration / statistics / general information | 
+		   aps Automatic protection switching | 
+		   ring Ethernet protection ring | 
+		   vlan-group VLAN group | 
+		   <short(0-64)> VLAN group ID |
+		   switch Switch related configuration |
+		   <string(32)> Context name|  
+		   <CR> Displays the VLAN to group mapping
+
+
+    COMMAND : show aps ring global info [switch <string(32)>]
+    ACTION  : {
+                  cli_process_erps_sh_cmd (CliHandle, CLI_ERPS_SHOW_GLB_INFO, 
+                                           NULL, $6);
+              }
+    SYNTAX  : show aps ring global info [switch <context_name>]
+    PRVID   : 15
+    HELP    : Shows the ERPS Global Information for a context 
+  CXT_HELP  : show  Displays the configuration / statistics / general information|
+              aps Automatic protection switching|
+              ring Ethernet protection ring|
+              global Global configuration|
+              info Information about the specified feature|
+              switch Switch related configuration|
+              <string(32)> Context name|
+              <CR> Shows the ERPS Global Information for a context.
+              
+    
+    COMMAND : show aps ring [group <integer>] [{configuration | statistics | timers }] [switch <string(32)>]
+    ACTION  : {
+                  UINT4 u4ShowCmd = ERPS_CLI_SHOW_RING_GROUP_ALL;
+
+                  if ($5 != NULL)
+                  {
+                      u4ShowCmd = ERPS_CLI_SHOW_RING_GROUP_CONFIG;
+                  }
+                  if ($6 != NULL)
+                  {
+                      u4ShowCmd = ERPS_CLI_SHOW_RING_GROUP_STATS;
+                  }
+                  if ($7 != NULL)
+                  {
+                      u4ShowCmd = ERPS_CLI_SHOW_RING_GROUP_TIMER;
+                  }
+                  
+                  cli_process_erps_sh_cmd (CliHandle, 
+                                           CLI_ERPS_SHOW_RING_GROUP_INFO,
+                                           NULL, $9, $4, u4ShowCmd);
+              }
+    SYNTAX  : show aps ring [group <group_id>] [{configuration | statistics | timers }] [switch <context_name>]    
+    PRVID   : 1
+    HELP    : Show the protection ring group related information
+  CXT_HELP  : show Displays the configuration / statistics / general information|
+              aps Automatic protection switching|
+              ring Ethernet protection ring|
+              group Ring group|
+              <1-4294967295> Ring group ID|
+              configuration Configuration related details|
+              statistics Statistics related information|
+	      timers Timer related information |
+	      switch Switch related configuration |
+	      <string(32)> Context name |
+              <CR> Show the protection ring group related information. 
+
+    COMMAND : clear aps ring statistics  [ring group <integer>] [switch <string(32)>] 
+    ACTION  : { 
+                  cli_process_erps_sh_cmd (CliHandle, CLI_ERPS_CLEAR_STATS_ALL, 
+                                            NULL, $8, $6); 
+              } 
+    SYNTAX  : clear aps ring statistics  [ring group <group-id>] [switch <context_name>] 
+    PRVID   : 1 
+    HELP    : Clear the statistic counters of ERPS. 
+              - If no optional argument is provided, then clear the statistics for all the Ring Group of the system. 
+              - If only Ring Group id is input then clear the statistics of this Ring Group for all the context. 
+              - If Ring id and context name is input then clear the statistics of this Ring Group in input context. 
+              - If context name is only defined then clear the statistic of all the Ring Groups in input context. 
+              switch Virtual context or component| 
+              <string(32)> Context name| 
+  CXT_HELP : clear Performs clear operation| 
+             aps Automatic protection switching| 
+             ring Ethernet protection ring| 
+             statistics Statistics related information| 
+             ring Ethernet protection ring| 
+             group Ring group| 
+             <1-4294967295> Ring group ID| 
+             switch Virtual context or component| 
+             <string(32)> Context name| 
+             <CR>  Clear the statistics counters of ERPS.If no optional argument is provided, / then clear the statistics for all the Ring Group of the system. / If only Ring Group id is input then clear the statistics of this  Ring Group for all the context. / If Ring Group id and context name is input then clear the statistics / of this Ring group in input context.If context name is only defined then clear / the statistics of all the Ring Groups in input context.     
+
+END GROUP
+
+

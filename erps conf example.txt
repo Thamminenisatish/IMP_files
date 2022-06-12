@@ -1,0 +1,43 @@
+int gi 0/0/1
+port link-type trunk
+quit
+int gi 0/0/2
+port link-type trunk
+quit
+erps ring 1
+control-vlan 10
+protected-instance 1
+quit
+region-configuration
+instance 1 vlan 10 100 t0 200
+active region-configuration            7416712472       7981682472
+quit
+erps ring 2
+control-vlan 20
+protected-instance 2
+quit
+region-configuration instance 2 vlan 20 300 to 400
+active region-configuration
+quit
+int gi 0/0/1
+stp disable
+erps ring 1
+erps ring 2 rpl owner
+quit
+int gi 0/0/2
+stp disable
+erps ring 1
+erps ring 2
+quit
+vlan batch 100 to 200 300 to 400
+int gi 0/0/1
+port trunk allow-pass vlan 100 to 200 300 to 400
+quit
+int gi 0/0/2
+port trunk allow-pass vlan 100 to 200 300 to 400
+quit
+dispaly erps
+
+
+
+dispaly erps verbose

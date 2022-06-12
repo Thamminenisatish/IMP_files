@@ -1,0 +1,17 @@
+ISS_PQA_ST_ERPS_MPLS_FN_VSI_03_OFFLOAD
+
+^MISS(config-if)# ethernet cfm enable^M
+^M% ECFM is shutdown^M^M
+^MISS(config-if)# ethernet cfm y1731 enabl
+
+********************************************************************************
+ERROR[3]: CLI Error on terminal Cmd: ethernet cfm y1731 enable Router : 1
+
+ERROR[11]: Ring State >> Idle PATTERN NOT FOUND
+Program received signal SIGSEGV, Segmentation fault.
+[Switching to Thread 0x8b8fef20 (LWP 19172)]
+
+
+********************************************************************************
+ERROR[12]: +++ISS_PQA_ST_ERPS_MPLS_FN_VSI_03_OFFLOAD+++ 1 LR/Host CRASHED +++ExecuteCliCommand+++
+ERROR[13]: state >> UP PATTERN NOT FOUND

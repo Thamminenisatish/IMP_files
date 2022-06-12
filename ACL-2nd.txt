@@ -1,0 +1,497 @@
+configure terminal
+mac access-list extended 1
+deny any any vlan 11 priority 50 svlan-id 2 double-tag
+end
+configure terminal
+mac access-list extended 2
+deny any any vlan 12 priority 50 svlan-id 3 cvlan-priority 2 svlan-priority 2 double-tag
+end
+configure terminal
+mac access-list extended 3
+deny any any vlan 13 priority 50 svlan-id 4 cvlan-priority 3 double-tag
+end
+configure terminal
+mac access-list extended 4
+deny any any vlan 14 priority 50 svlan-id 5 svlan-priority 4 double-tag
+end
+configure terminal
+mac access-list extended 5
+deny host 00:00:00:01:01:01 host 02:02:02:00:00:00 vlan 15 priority 50 double-tag
+deny any any vlan 15 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 6
+deny any any vlan 16 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 7
+deny any any vlan 17 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 8
+deny any any vlan 18 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 9
+deny any any vlan 19 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 10
+deny any any vlan 20 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 11
+deny any any vlan 21 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 12
+deny any any vlan 22 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 13
+deny any any vlan 23 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 14
+deny any any vlan 24 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 15
+deny any any vlan 25 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 16
+deny any any vlan 26 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 17
+deny any any vlan 27 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 18
+deny any any vlan 28 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 19
+deny any any vlan 29 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 20
+deny any any vlan 30 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 21
+deny any any vlan 31 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 22
+deny any any vlan 32 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 23
+deny any any vlan 33 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 24
+deny any any vlan 34 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 25
+deny any any vlan 35 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 26
+deny any any vlan 36 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 27
+deny any any vlan 37 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 28
+deny any any vlan 38 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 29
+deny any any vlan 39 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 30
+deny any any vlan 40 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 31
+deny any any vlan 41 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 32
+deny any any vlan 42 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 33
+deny any any vlan 43 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 34
+deny any any vlan 44 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 35
+deny any any vlan 45 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 36
+deny any any vlan 46 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 37
+deny any any vlan 47 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 38
+deny any any vlan 48 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 39
+deny any any vlan 49 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 40
+deny any any vlan 50 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 41
+deny any any vlan 51 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 42
+deny any any vlan 52 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 43
+deny any any vlan 53 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 44
+deny any any vlan 54 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 45
+deny any any vlan 55 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 46
+deny any any vlan 56 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 47
+deny any any vlan 57 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 48
+deny any any vlan 58 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 49
+deny any any vlan 59 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 50
+deny any any vlan 60 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 51
+deny any any vlan 61 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 52
+deny any any vlan 62 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 53
+deny any any vlan 63 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 54
+deny any any vlan 64 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 55
+deny any any vlan 65 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 56
+deny any any vlan 66 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 57
+deny any any vlan 67 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 58
+deny any any vlan 68 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 59
+deny any any vlan 69 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 60
+deny any any vlan 70 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 61
+deny any any vlan 71 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 62
+deny any any vlan 72 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 63
+deny any any vlan 73 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 64
+deny any any vlan 74 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 65
+deny any any vlan 75 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 66
+deny any any vlan 76 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 67
+deny any any vlan 77 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 68
+deny any any vlan 78 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 69
+deny any any vlan 79 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 70
+deny any any vlan 80 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 71
+deny any any vlan 81 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 72
+deny any any vlan 82 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 73
+deny any any vlan 83 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 74
+deny any any vlan 84 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 75
+deny any any vlan 85 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 76
+deny any any vlan 86 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 77
+deny any any vlan 87 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 78
+deny any any vlan 88 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 79
+deny any any vlan 89 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 80
+deny any any vlan 90 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 81
+deny any any vlan 91 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 82
+deny any any vlan 92 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 83
+deny any any vlan 93 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 84
+deny any any vlan 94 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 85
+deny any any vlan 95 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 86
+deny any any vlan 96 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 87
+deny any any vlan 97 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 88
+deny any any vlan 98 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 89
+deny any any vlan 99 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 90
+deny any any vlan 100 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 91
+deny any any vlan 101 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 92
+deny any any vlan 102 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 93
+deny any any vlan 103 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 94
+deny any any vlan 104 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 95
+deny any any vlan 105 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 96
+deny any any vlan 106 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 97
+deny any any vlan 107 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 98
+deny any any vlan 108 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 99
+deny any any vlan 109 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 100
+deny any any vlan 110 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 101
+deny any any vlan 111 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 102
+deny any any vlan 112 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 103
+deny any any vlan 113 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 104
+deny any any vlan 114 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 105
+deny any any vlan 115 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 106
+deny any any vlan 116 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 107
+deny any any vlan 117 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 108
+deny any any vlan 118 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 109
+deny any any vlan 119 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 110
+deny any any vlan 120 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 111
+deny any any vlan 121 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 112
+deny any any vlan 122 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 113
+deny any any vlan 123 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 114
+deny any any vlan 124 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 115
+deny any any vlan 125 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 116
+deny any any vlan 126 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 117
+deny any any vlan 127 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 118
+deny any any vlan 128 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 119
+deny any any vlan 129 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 120
+deny any any vlan 130 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 121
+deny any any vlan 131 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 122
+deny any any vlan 132 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 123
+deny any any vlan 133 priority 50 double-tag
+end
+configure terminal
+mac access-list extended 124
+deny any any vlan 134 priority 50 double-tag
+end

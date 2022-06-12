@@ -1,0 +1,17 @@
+ISS_CC_FN_CCMOFF_1 COMPLETED^M
+ Result        : FAIL^M
+ISS_CC_FN_CCMOFF_7 COMPLETED^M
+ Result        : FAIL
+ ISS_CC_FN_CCMOFF_8 COMPLETED^M
+ Result        : FAIL^M
+ISS_ST_FN_CC_OFF_9 COMPLETED^M
+ Result        : FAIL^
+ISS_ST_FN_CC_OFF_14 COMPLETED^M
+ Result        : FAIL^
+
+
+
+ERROR[0]: scotty_set: "genErr 0 {1.3.6.1.4.1.2076.160.1.0.7.1.3.0.1.1.1 Integer32 up}
+%" - got from scotty;
+while executing:
+"snmp1 set {{fsMIEcfmMepDirection.0.1.1.1 2}}"

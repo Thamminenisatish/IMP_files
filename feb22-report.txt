@@ -1,0 +1,100 @@
+ISS# sh int des
+
+Interface    Status   Protocol  Description   SFP Status
+---------    ------   --------  -----------   ----------
+Gi0/1        up       up            Not Present
+Gi0/2        up       up            Not Present
+Gi0/3        up       up            Not Present
+Gi0/4        up       up            Not Present
+Gi0/5        up       up            Not Present
+Gi0/6        up       up            Not Present
+Gi0/7        up       up            Not Present
+Gi0/8        up       up            Not Present
+Gi0/9        down     down          Not Present
+Gi0/10       down     down          Not Present
+Gi0/11       down     down          Not Present
+Gi0/12       down     down          Not Present
+Gi0/13       down     down          Not Present
+Gi0/14       down     down          Not Present
+Gi0/15       down     down          Not Present
+Gi0/16       down     down          Not Present
+po100        up       down          Not Present
+po200        up       down          Not Present
+po300        up       down          Not Present
+po400        up       down          Not Present
+po500        up       down          Not Present
+po600        up       down          Not Present
+po700        up       down          Not Present
+po800        up       down          Not Present
+vlan1        up       down          Not Present
+
+
+
+ISS# sh int po 200
+
+po200 up, line protocol is down (not connect)
+Bridge Port Type: Customer Bridge Port
+
+Interface SubType: Not Applicable
+Interface Alias: po200
+
+Hardware Address is 00:02:02:03:04:82
+
+
+ISS# sh int po 800
+
+po800 up, line protocol is down (not connect)
+Bridge Port Type: Customer Bridge Port
+
+Interface SubType: Not Applicable
+Interface Alias: po800
+
+Hardware Address is 00:02:02:03:04:88
+
+
+
+
+ISS# configure terminal
+ISS(config)# no shut port-channel
+ISS(config)# channel-protocol lacp
+ISS(config)# interface port-channel 900
+% Maximum number of port channels supported in the system is 8
+
+
+ISS# sh ether summary
+
+Port-channel Module Admin Status is enabled
+Port-channel Module Oper Status is enabled
+Port-channel recovery action on exceeding Threshold is None
+Port-channel Independent mode is disabled
+Port-channel System Identifier is  00:02:02:03:04:01
+LACP System Priority: 32768
+LACP Error Recovery Time: 0
+LACP Error Recovery Threshold: 5
+LACP Recovery Triggered count: 0
+LACP Error Recovery Threshold for Defaulted State : 5
+LACP Error Recovery Threshold for Hardware Failure : 5
+LACP Same state threshold : 5
+
+Flags:
+D - down         P - in port-channel
+I - stand-alone  H - Hot-standby (LACP only)
+E - ErrDisabled
+U - in-use       d - default port
+R - Layer3
+AD - Admin Down      AU - Admin Up
+OD - Operative Down  OU - Operative Up
+
+Number of channel-groups in use: 8
+Number of aggregators: 8
+
+Group  Port-channel    Protocol   Ports
+-------------------------------------------------------------------------
+100    Po100(D)[AU,OD] LACP       Gi0/1(D)
+200    Po200(D)[AU,OD] LACP       Gi0/2(D)
+300    Po300(D)[AU,OD] LACP       Gi0/3(D)
+400    Po400(D)[AU,OD] LACP       Gi0/4(D)
+500    Po500(D)[AU,OD] LACP       Gi0/5(D)
+600    Po600(D)[AU,OD] LACP       Gi0/6(D)
+700    Po700(D)[AU,OD] LACP       Gi0/7(D)
+800    Po800(D)[AU,OD] LACP       Gi0/8(D)

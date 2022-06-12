@@ -1,0 +1,1 @@
+aps group active--->CLI_ERPS_RING_GROUP_ACTIVATE--->ErpsCliActivateRingGroup()--->nmhSetFsErpsRingRowStatus--->case:ACTIVE--->ErpsRingActivateRing--->ErpsUtilConfRingEntryInHw--->ErpsFsErpsHwRingConfig---->FsErpsHwRingConfig(NPAPI)
