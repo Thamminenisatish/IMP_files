@@ -1,0 +1,60 @@
+4015685
+
+Paris^2025
+
+
+for setting the number  ":set number"
+for cstag (ctrl ])   ":set cscopetag"    to return "ctrl t"
+
+for regression
+export CVSROOT=:pserver:anonymous:anonymous@172.31.112.72:/home/projects/iss
+cvs co IQI/RegressionSetups/VMRUN/SETUP43
+
+
+Satish Tammineni EXT
+
+thsatish_x
+
+Windows@02 
+
+for getting warnings list
+make exe -j10 &> file
+grep -ri "warning" file > warning file
+
+
+applying patches
+patch -p0 --dry-run < filename
+patch -p0 < filename
+
+for naming bashes from 0, 1, 2 to any other names   ctrl+a and shift+a
+
+ctrl a shift h ---->    logfile saving from ISS
+
+for raising RB
+
+1.export CVSROOT=:pserver:anonymous:anonymous@172.31.112.72:/home/projects/ISS_REPO_ONE_TOS_GREEN_YELLOW_RED_16FEB21
+2. cvs diff -BpuwN code/future/ > 1
+3. grep -r "RCS file" 1 > filelist_name
+4. cvs diff -BpuwN `cat filelist_name` > diff_file_name
+
+report.diff
+
+for using any tag
+cvs co -r ISS_TAG_24DEC21_2145_SIAE_11_1_0_2_REL_TAG_01 code
+
+
+
+
+Error:
+undefined reference:  first check the function where it defined by "ctrl+]" and see the file.
+
+#hw
+#hw "cint"
+cint> bcm_field_group_dump (0,10);
+
+
+for BGP debug
+debug ip bgp all
+
+ printf ("%s in line %d \r\n",__func__,__LINE__);
+
